@@ -12,12 +12,32 @@
 %%  ``BABED'' Bachelor i IT-støttet bedriftsutvikling.
 %%   for example \documentclass[BIS,norsk,twoside]{ntnuthesis/ntnubachelorthesis}
 
-\documentclass[BADR,english,oneside]{ntnuthesis/ntnubachelorthesis}
+\documentclass[BIS,norsk,oneside]{ntnuthesis/ntnubachelorthesis}
+\thesistitle{Case 1: Ulovlig fildeling på skolenettet}
+\thesisshorttitle{Case 1: Ulovlig fildeling på skolenettet}
+\thesisauthor{Philip Nyblom, Fredrik Theien, Thomas Huse, Ole Martin Søgnen}
+\thesisdate{16.05.2018}
 
 \usepackage{csvsimple}
 \usepackage{booktabs}
-
 \usepackage{gnuplottex}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}     % For utf8 encoded .tex files because...
+\usepackage[norsk]{babel}       % For Norwegian labeling
+\usepackage{graphicx}           % For inclusion of graphics
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{url}
+\usepackage{hyperref}    % For cross references in pdf
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{placeins}
+\usepackage{pdfpages}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{lscape}
+\usepackage{bigstrut}
+\usepackage{verbatim}
+\usepackage{float}
 
 
 \definecolor{darkgreen}{rgb}{0,0.5,0}
@@ -64,43 +84,35 @@
 % \O{}   \AA{}   \AE{}   you can also just leave a space and latex will remove it
 %    eg, NTNU i Gj\o vik  or NTNU i Gj\o{}vik
 
-
-
-
+\graphicspath{ {bilder/} }
 
 \begin{document}
 
-\input{inc/BachelorThesisData} % this is the file which contains all the details about your thesis
-
-\makefrontpages % make the frontpages
-
-\input{inc/preface}
-
+\thesistitlepage
 
 \tableofcontents
 \listoffigures
 \listoftables
 \lstlistoflistings
 
-
-\input{inc/introduction}
-\input{inc/requirements}
-\input{inc/technical}
-\input{inc/process}
-\input{inc/implementation}
-\input{inc/deployment}
-\input{inc/testing}
-\input{inc/discussion}
-\input{inc/conclusion}
-
+\input{case_1/0_forord}
+\input{case_1/1_introduksjon}
+\input{case_1/2_problemforstaelse.tex}
+\input{case_1/3_idemyldring.tex}
+\input{case_1/4_datainnsamling.tex}
+\input{case_1/5_dataanalyse.tex}
+\input{case_1/6_rotarsaksidentifisering.tex}
+\input{case_1/7_problemeliminering.tex}
+\input{case_1/8_losningsimplementering.tex}
+\input{case_1/9_diskogkonk.tex}
 
 \bibliographystyle{ntnuthesis/ntnubachelorthesis}
-\bibliography{inc/BachelorExample}
+\bibliography{case_1/bibliografi}
 
 \appendix %after this line all chapters will have leters instead of numbers
 %\input{projectplan}
 %\input{gantt}
-\input{inc/meetinglog}
+%\input{main/meetinglog}
 %\input{progressreviews}
 %\input{worklog}
 

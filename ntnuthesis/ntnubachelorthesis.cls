@@ -709,7 +709,7 @@ Use $\backslash$useyear\{<year>\} to set year.
 	Supervisor: & \thesis@supervisor\\
 		& \thesis@supervisorA\\
 		&\\
-	Employer: & \thesis@oppdragsgiver\\
+	Employer: & Department of Information Security and Communication Technology, NTNU\\
 		&\\
 	Contact Person: & \nmt@contact\\
 		&\\
