@@ -1,23 +1,25 @@
 \chapter{Problemforståelse}
-%Hei på deg, her kommer jeg. 
+Denne fasen eksisterer for å passe på at en har forstått problemet i dypere detalj. Verktøyene som er relevante å bruke skal gi en bedre forståelse av blant annet omfanget og de ulike aspektene ved et problem. Jo bedre tilgang en har på logger og dokumentasjon, jo bedre vil denne fasen kunne utføres. Siden vi har liten erfaring med bruk av verktøy vil vi prøve ut to i denne analysen. Kritiske hendelser for å undersøke hva som blir lastet ned, og flytdiagram for å kartlegge hendelsesforløpet til en som laster ned.
 
 \section{Flytdiagram}
+Et flytdiagram er et diagram som viser en flyt av aktiviteter i en prosess eller handling. Flytdiagrammer kan bli brukt til å kartlegge en prosess for å muligens illustrere hvor problemet ligger, eller for å skape en grunnleggende forståelse av prosessen som har innflytelse på problemet. 
 
 \subsection{Ønsket utbytte}
-Her prøver vi å kartlegge hendelsesforløpet, og hvotdan bruksmønsteret til en bruker av nettet til NTNU kan se ut, da med fokus på fildeling. Vi håper at dette kan gi oss en mer helhetlig forståelse av hva som kan være årsaken til fildeling, og kanskje vi kan bruke dette til å komme opp med tiltak senere i prossesen.
+Her prøver vi å kartlegge hendelsesforløpet, og hvordan bruksmønsteret til en bruker av nettet til NTNU kan se ut, da med fokus på fildeling. Vi håper at dette kan gi oss en mer helhetlig forståelse av hva som kan være årsaken til fildeling, og kanskje vi kan bruke dette til å komme opp med tiltak senere i prosessen.
 \subsection{Gjennomførelse}
-Vi fulgte metoden for å lage et flytdiagram, fra hvordan boken XXXX.
+Vi fulgte metoden for å lage et flytdiagram, fra boken om rotårsaksanalyse \cite{RCA}.
 \begin{enumerate}
     \item Vi samlet alle på gruppen for å diskutere prosessen, og hadde med oss post-it lapper
-    \item vi definerte brukerne som studenter ved NTNU og da, antageligvis mest studenter som bor på studenthybler.
-    \item Vi definerte hvilke aktiviteter som må bli gjort/ være tilstede for at skolen skal få et notis.
-    \item også flyttet vi rundt på lappene til de kkom i en naturlig rekkefølge.
+    \item Vi definerte brukerne som studenter ved NTNU og da, antageligvis mest studenter som bor på studenthybler.
+    \item Vi definerte hvilke aktiviteter som må bli gjort/være tilstede for at skolen skal få et notis.
+    \item Så flyttet vi rundt på lappene til de kom i en naturlig rekkefølge.
 \end{enumerate}
 
 
 For å forstå problemet lagde vi et flytdiagram for å få en bedre forståelse av hendelsesforløpet når noen driver med fildeling.
-Først kobles en bruker seg til skolenettet, enten gjennom vpn eller direkte fra campus/studenthybler.
-Så bestemmer velger brukeren enten å bruke nettet vanlig eller starter å laste ned filer, hvis brukereren bruker det vanlig bryr vi oss ikke om disse. Når vedkommende som har bestemt seg for å laste ned skal laste ned har han enten muligheten til å gjøre dette gjennom en privat nedlastnings side, vi gjør den antagelsen her at private tjenester ikke er med i statestikken fra skolen og at det ikke kommer noen ''copyright claims'' fra brukere som bruker private tjenester. neste som kan skje med de som bruker offentlig tjenester er at de torrentene de laster ned blir sporet, og da får domeneeier et notis om ulovelig nedlastning.
+
+\subsection{Resultater}
+Flytdiagrammet som ble laget kan sees under. Først kobles en bruker seg til skolenettet, enten gjennom VPN eller direkte fra campus eller studenthybler. Deretter bestemmer velger brukeren enten å bruke nettet vanlig eller starter å laste ned filer, hvis brukereren bruker det vanlig bryr vi oss ikke om disse. Når vedkommende som har bestemt seg for å laste ned skal laste ned har han enten muligheten til å gjøre dette gjennom en privat nedlastingsside, vi gjør den antagelsen her at private tjenester ikke er med i statistikken fra skolen og at det ikke kommer noen opphavsrettsnotiser fra brukere som bruker private tjenester. Det neste som kan skje med de som bruker offentlig tjenester er at de torrentene de laster ned blir sporet, og da får domeneeier et notis om ulovlig nedlasting.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{case_1/bilder/Flowchart.pdf}
@@ -26,7 +28,7 @@ Så bestemmer velger brukeren enten å bruke nettet vanlig eller starter å last
 \end{figure}
 
 \subsection{Konklusjon av verktøyet}
-
+Vi følte verktøyet fungerte godt for å få et overblikk på hvordan situasjonen med torrenting fungerte. Eneste negative med verktøyet er at det krever ganske god kjennskap til mulige hendelsesforløp, noe som kan være negativt om man ikke kjenner godt til problemet fra før. 
 
 \section{Kritiske hendelser}
 For å gå dypere i detalj har vi tatt en titt på kritiske hendelser som inngår i problemstillingen. Vi har valgt å dele opp problemet i mindre stykker for å spørre studenter som bor i SiT-bolig om hva de laster ned hvis de først gjør det. 
@@ -86,4 +88,4 @@ Merk: Hver person kan svare at de laster ned fra flere kategorier.
 \noindent Vi kan se at det er filmer og serier som er den store synderen i undersøkelsen, noe som bekreftet vår teori. 
 
 \subsection{Konklusjon av verktøyet}
-Verktøyet bekreftet vår teori om at det meste som blir lastet ned på skolens nett er filmer og serier. Dette kan tas til videre betraktning senere i rotårsaksanalysen. Verktøyet fungerte greit og ga oss den informasjonen vi var ute etter. 
+Verktøyet bekreftet vår teori om at det meste som blir lastet ned på skolens nett er filmer og serier. Dette kan tas til videre betraktning senere i rotårsaksanalysen. Verktøyet fungerte bra og ga oss den informasjonen vi var ute etter. Det fungerer også greit om man ikke har en teori om omfang på forhånd slik vi hadde, så lenge en er flinke med idémyldring av mulige kategorier. 
