@@ -13,6 +13,10 @@
 %%   for example \documentclass[BIS,norsk,twoside]{ntnuthesis/ntnubachelorthesis}
 
 \documentclass[BIS,norsk,oneside]{ntnuthesis/ntnubachelorthesis}
+\thesistitle{Case 3: XXX}
+\thesisshorttitle{Case 3: XXX}
+\thesisauthor{Philip Nyblom, Fredrik Theien, Thomas Huse, Ole Martin Søgnen}
+\thesisdate{16.05.2018}
 
 \usepackage{csvsimple}
 \usepackage{booktabs}
@@ -81,54 +85,35 @@
 % \O{}   \AA{}   \AE{}   you can also just leave a space and latex will remove it
 %    eg, NTNU i Gj\o vik  or NTNU i Gj\o{}vik
 
-
 \graphicspath{ {bilder/} }
 
 \begin{document}
 
-\input{main/forsider.tex} % this is the file which contains all the details about your thesis
-
-\makefrontpages % make the frontpages
-
-\input{main/1_Introduksjon/0_forord.tex}
-
+\thesistitlepage
 
 \tableofcontents
 \listoffigures
 \listoftables
 
-\input{main/1_Introduksjon/1_begreper.tex}
-\input{main/1_Introduksjon/2_kortfattet_sammendrag.tex}
-\input{main/1_Introduksjon/3_bakgrunn.tex}
-\input{main/1_Introduksjon/4_problemstilling.tex}
-\input{main/1_Introduksjon/5_motivasjon.tex}
-\input{main/1_Introduksjon/6_rammer.tex}
-\input{main/1_Introduksjon/7_avgrensning.tex}
-\input{main/1_Introduksjon/8_prosjektmaal.tex}
-\input{main/1_Introduksjon/9_organisering.tex}
-\input{main/2_Casebeskrivelser/1_torrents.tex}
-\input{main/2_Casebeskrivelser/2_kontoer.tex}
-\input{main/2_Casebeskrivelser/3_xxx.tex}
-\input{main/3_Teori/1_rotaarsaksanalyse.tex}
-\input{main/4_Metode/1_metode.tex}
-\input{main/4_Metode/2_anvendtRCA.tex}
-\input{main/5_Resultater/1_resultater.tex}
-\input{main/5_Resultater/2_case1_resultater.tex}
-\input{main/5_Resultater/3_case2_resultater.tex}
-\input{main/5_Resultater/4_case3_resultater.tex}
-\input{main/6_Diskusjon/1_diskusjon.tex}
-\input{main/7_Konklusjon/1_konklusjon.tex}
-%\input{main/}
-
-
+%\input{0_forord}
+\input{case_3/1_introduksjon}
+\input{case_3/2_problemforstaelse.tex}
+\input{case_3/3_idemyldring.tex}
+\input{case_3/4_datainnsamling.tex}
+\input{case_3/5_dataanalyse.tex}
+\input{case_3/6_rotarsaksidentifisering.tex}
+\input{case_3/7_problemeliminering.tex}
+\input{case_3/8_losningsimplementering.tex}
+\input{case_3/9_diskogkonk.tex}
+\input{case_3/vedlegg.tex}
 
 \bibliographystyle{ntnuthesis/ntnubachelorthesis}
-\bibliography{main/referanser}
+\bibliography{case_3/bibliografi}
 
 \appendix %after this line all chapters will have leters instead of numbers
 %\input{projectplan}
 %\input{gantt}
-\input{main/8_Vedlegg/motelogger.tex}
+%\input{main/meetinglog}
 %\input{progressreviews}
 %\input{worklog}
 
