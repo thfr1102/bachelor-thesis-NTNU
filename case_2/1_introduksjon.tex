@@ -1,14 +1,14 @@
 \chapter{Introduksjon}
 %--------------------MÅ INN I HOVEDRAPPORT------------------------------------------
-\fixme Rotårsaksanalyser er et lite brukt verktøy innen informasjonssikkerhet, men er av økende betydning. Vanlig tilnærming til informasjonssikkerhetsstyring er å utføre en risiko-og sårbarhetsanalyse (ROS-analyse) for så å gjennomføre tiltak som fører risikoene til et akseptabelt nivå. En annen hyppig brukt tilnærming er hendelseshåndtering der en planlegger hvordan det skal responderes på hendelser etter de er inntruffet. Rotårsaksanalyse skiller seg fra disse ved å gå i dybden på problemet, kartlegge hva slags rotårsaker som står bak, og innføre tiltak for å fjerne disse helt.
+\fixme Rotårsaksanalyser er et lite brukt verktøy innen informasjonssikkerhet, men er av økende betydning. Vanlig tilnærming til informasjonssikkerhetsstyring er å utføre en risiko- og sårbarhetsanalyse (ROS-analyse) for så å gjennomføre tiltak som fører risikoene til et akseptabelt nivå. En annen hyppig brukt tilnærming er hendelseshåndtering der en planlegger hvordan det skal responderes på hendelser etter de er inntruffet. Rotårsaksanalyse skiller seg fra disse ved å gå i dybden på problemet, kartlegge hva slags rotårsaker som står bak, og innføre tiltak for å fjerne disse helt.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Oppgavebeskrivelse}
-Denne rapporten er en delrapport i en større oppgave om rotårsaksanalyse. Dette caset går inn på rotårsaken til at skolen har mye passord og brukernavn som på avveie. I denne rapporten bruker vi kompromittert bruker, da mener vi at passord og brukernavn har kommet på avveie. Vi ser i denne rapporten kun på ansatt sin brukerkonto og ikke studentkonto, da studentkonto ikke har like mye rettigheter som ansatte.
+Denne rapporten er en delrapport i en større oppgave om rotårsaksanalyse. Dette caset går inn på rotårsaken til at universitetet har så mange kompromitterte brukerkontoer. Når vi snakker om en kompromittert bruker i denne rapporten mener vi at passord og brukernavn har kommet på avveie. I rapporten ser vi kun på ansatte sin brukerkonto og ikke studentkonto, da studentkontoer ikke har like mye rettigheter som de ansattes.
 
-I 2017 var kompromitterte kontoer alene årsaken til ca. 70 sikkerhetshendelser ved NTNU. I desember 2017 kom det også en stor datadump som innholdt over 5000 kontoer affiliert med NTNU, som alle innehold passord og brukernavn. Av disse var det 101 som fortsatt var aktive i systemene til NTNU. 
+I 2017 var kompromitterte kontoer alene årsaken til omtrent 70 sikkerhetshendelser ved NTNU. I desember 2017 kom det også en stor datadump som innholdt over 5000 kontoer affiliert med NTNU, som alle inneholdt både brukernavn og passord. Av disse var det 101 som fortsatt var aktive i systemene til NTNU, det vil si brukernavn og passord var fortsatt gyldige.
 
-Det er kjent årsak til kompromittert konto i kun 5 av tillfellene. Der var  det phishing som sto for 4 av 5 og spam var 1 årsak. 
+Universitetet kjenner bare årsakene til kompromitteringene i 5 av tilfellene. Phishing sto for fire og spam for en av hendelsene. 
 
 \begin{figure}[H]
     \centering
@@ -18,20 +18,25 @@ Det er kjent årsak til kompromittert konto i kun 5 av tillfellene. Der var  det
 \end{figure}
 
 
-En del av kompromitterte kontoer blir brukt av utenlandske aktører for å få tilgang til forskningsartikler, noe som koster skolen vår rundt (50?) dollar per artikkel. Av slike artikler, blir det hentet ut flere tusen av på en gang per bruker. Skolen vet ikke om når det blir hentet ut artikler, eller om det er legitimt bruk av artikler, de får ofte vite det først når skolen får beskjed av samarbeidspartnere til NTNU, for eksempel de som tilbyr artiklene. 
+Universitetet betaler for tilgang til databaser som inneholder tusenvis av forskningsartikler og andre artikler. 26 av de kompromitterte brukerne ble brukt av utenlandske aktører for å skaffe seg tilgang til forskningsartikler. Konsekvensen ved å ha kompromitterte kontoer som laster ned forskningsartikler er ikke bare at NTNU taper penger, men at NTNU risikerer å bli blokkert fra databasene. Angriperne derimot tjener på å ikke trenge å betale for tilgang til databasene. 
 
-Kompromitterte kontoer er stort i svartebørsen. 
+Av slike artikler, blir det hentet ut flere tusen på en gang per bruker. Universitetet vet ikke om når det blir hentet ut artikler, eller om det er legitimt bruk av artiklene. De får ofte vite det først når universitetet får beskjed av samarbeidspartnere til NTNU, for eksempel de som tilbyr artiklene. 
+
+
+Kompromitterte kontoer blir ofte solgt på svartebørsen. 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.44en]{case_2/bilder/prislite_kontore.png}
+    \includegraphics[scale=0.4]{case_2/bilder/prislite_kontore.png}
     \label{fig:kjkk}
-    \caption[pris_på_kontoer]{pris på kontoer}
+    \caption[pris_kontoer]{Pris på kontoer}
 \end{figure}
+Kilde: https://krebsonsecurity.com/2017/12/the-market-for-stolen-account-credentials/
 
-Dette viser at det er et stort marked for kontoer, og siden NTNU har mange samarbeidspartnere er de et stort mål. 
+
+Dette viser at det er et stort marked for brukerkontoer, og siden NTNU har mange samarbeidspartnere er de et stort mål for trusselaktørene. 
 
 
-Denne analysen går ut på å identifisere rotårsaken til hvorfor NTNU har så mange kompromitterte brukerkontoer.
+Denne analysen går ut på å identifisere rotårsaken til hvordan NTNU har så mange kompromitterte brukerkontoer.
 
 
 \section{Metode}

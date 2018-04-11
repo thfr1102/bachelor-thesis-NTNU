@@ -3,13 +3,13 @@ Denne fasen eksisterer for å passe på at en har forstått problemet i dypere d
 
 
 \section{Kritiske hendelser}
-For å gå lære mer om bakgrunnen til problemet bruker vi verktøyet kritiske hendelser for å se på frekvensen av misbruk som er registrert fra de kompromitterte kontoene. Slik kan vi kartlegge og forstå hva de kompromitterte kontoene brukes til. Denne informasjonen ble gitt fra oppdragsgiver.
+For å lære mer om bakgrunnen til problemet bruker vi verktøyet kritiske hendelser for å se på frekvensen av misbruk som er registrert fra de kompromitterte kontoene. Slik kan vi kartlegge og forstå hva de kompromitterte kontoene brukes til. Denne informasjonen ble gitt fra oppdragsgiver.
 
 \subsection{Ønsket utbytte}
 Ved bruk av dette verktøyet ønsker vi å få en oversikt over hvilke handlinger de kompromitterte kontoene utfører. Dette går i stor grad ut på hva som er motivasjonen til trusselaktørene. Vi ønsker å danne et bilde av hva de ønsker å oppnå ved å kompromittere kontoene, slik at vi kan bruke den informasjonen senere til å finne rotårsaken til at de blir kompromittert. 
 
 \subsection{Gjennomførelse}
-Sammen med oppgavebeskrivelsen fikk vi en liste over loggførte sikkerhetshendelser som hadde foregått det siste året hvor kompromitterte kontoer var involvert. Vi sorterte disse dataene i synkende rekkefølge og la det inn i en tabell for å se kritikaliteten til de enkelte sikkerhetshendelsene, og dermed fokusområdene til trusselaktørene. 
+Sammen med oppgavebeskrivelsen fikk vi en liste over loggførte sikkerhetshendelser som hadde foregått det siste året hvor kompromitterte kontoer var involvert. Dataene ble sortert i synkende rekkefølge og lagt inn i en tabell for å visualisere frekvensen til de enkelte sikkerhetshendelsene, og dermed fokusområdene til trusselaktørene. 
 
 \subsection{Resultater}
 \begin{table} [H]
@@ -42,11 +42,11 @@ Sammen med oppgavebeskrivelsen fikk vi en liste over loggførte sikkerhetshendel
     \label{kritisk_tabell_2}
 \end{table}
 
-Fra tabellen ser vi at spam er den hendelsen med høyest frekvens, men etter samtaler med oppdragsgiver var ikke dette problemet av størst viktighet, da dette er noe som enkelt blir lagt merke til, og er trolig ikke hovedgrunnen til at aktørene aktivt går inn for å kompromittere NTNU sine brukerkontoer. Når det kommer til misuse i tabellen ovenfor referer det til hendelser der uvedkommende misbruker NTNU sine ressurser, spesielt i form av å stjele forskningsartikler på NTNU sin regning. Dette var en av de største problemene med kompromittering av kontoene, siden det førte til økonomisk tap for NTNU. 
+Fra tabellen ser vi at spam er den hendelsen med høyest frekvens, men etter diskusjon med oppdragsgiver var ikke dette problemet av størst viktighet. Det er fordi dette er noe som enkelt blir lagt merke til og er trolig ikke hovedgrunnen til at aktørene aktivt går inn for å kompromittere NTNU sine brukerkontoer. Når det kommer til misuse i tabellen ovenfor referer det til hendelser der uvedkommende misbruker NTNU sine ressurser, spesielt i form av å stjele forskningsartikler på NTNU sin regning. Dette var en av de største problemene med kompromittering av kontoene, siden det førte til økonomisk tap for NTNU og fare for utestengelse fra artikkeldatabasene. 
 
 
 \subsection{Konklusjon av verktøyet}
-I dette caset fungerte metoden ekstremt godt siden vi hadde all data på forhånd, og trengte bare få satt det i system. Verktøyet hjalp veldig til å se hvilke symptomer som er av høyest frekvens. Det negative med verktøyet i dette caset var at det ikke beskriver hvor kritiske enkelthendelsene er, men bare hvor mange det er av de. Dette måtte vi forhøre oss med oppdragsgiver for å komme fram til. I tabellen vår ser vi at spam ligger på topp, men det viser seg at misuse egentlig er mer kritisk, selv om det ligger under. 
+I dette caset fungerte metoden godt siden vi hadde all data på forhånd og trengte bare få satt det i system. Verktøyet hjalp veldig til å se hvilke symptomer som er av høyest frekvens. Det negative med verktøyet i dette caset var at det ikke beskriver hvor kritiske enkelthendelsene er, bare hvor mange det er av de. Kritikaliteten til enkelthendelsene måtte vi forhøre oss med oppdragsgiver for å komme fram til. I tabellen vår ser vi at spam ligger på topp, men det viser seg at misuse egentlig er mer kritisk, selv om det ligger under. 
 
 
 
