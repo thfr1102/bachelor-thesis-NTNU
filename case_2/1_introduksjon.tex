@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Oppgavebeskrivelse}
-Denne rapporten er en delrapport i en større oppgave om rotårsaksanalyse. Dette caset går inn på rotårsaken til at universitetet har så mange kompromitterte brukerkontoer. Når vi snakker om en kompromittert bruker i denne rapporten mener vi at passord og brukernavn har kommet på avveie. I rapporten ser vi kun på ansatte sin brukerkonto og ikke studentkonto, da studentkontoer ikke har like mye rettigheter som de ansattes.
+Denne rapporten er en delrapport i en større oppgave om rotårsaksanalyse. Dette caset går inn på rotårsaken til at universitetet har så mange kompromitterte brukerkontoer. Når vi snakker om en kompromittert bruker i denne rapporten mener vi at passord og brukernavn har kommet på avveie. I rapporten ser vi på både ansatt- og studentkonto. 
 
 I 2017 var kompromitterte kontoer alene årsaken til omtrent 70 sikkerhetshendelser ved NTNU. I desember 2017 kom det også en stor datadump som innholdt over 5000 kontoer affiliert med NTNU, som alle inneholdt både brukernavn og passord. Av disse var det 101 som fortsatt var aktive i systemene til NTNU, det vil si brukernavn og passord var fortsatt gyldige.
 
@@ -13,8 +13,21 @@ Universitetet kjenner bare årsakene til kompromitteringene i 5 av tilfellene. P
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.6]{case_2/bilder/kjente_arsaker.pdf}
-    \label{fig:kjkk}
-    \caption[kjente_årsaker_kompromittert_konto]{Kjente årsaker til kompromittert konto}
+    \caption[Kjente årsaker til kompromittert konto]{Kjente årsaker til kompromittert konto}
+    \label{fig:kjente-arsaker-kompromittert-konto}
+\end{figure}
+
+Phishing er en av de få årsakene vi har noe data på, så det er en av årsakene vi vil holde fokus på i analysen. Bildet under viser et eksempel på en phishing e-post som ble sendt til en ansatt ved NTNU.
+
+\begin{figure}[H]%
+    \centering
+    \subfloat[Forsøk fra November 2017]{{\includegraphics[width=5cm]{case_2/bilder/phishing_1.png} }}%
+    \qquad
+    \subfloat[Forsøk fra Januar 2018]{{\includegraphics[width=5cm]{case_2/bilder/phishing_2.png} }}%
+    \qquad
+    \subfloat[Forsøk fra Januar 2018]{{\includegraphics[width=5cm]{case_2/bilder/phishing_3.png} }}%
+    \caption{Eksempel på phishing e-post som ble identifisert ved NTNU}%
+    \label{fig:example}%
 \end{figure}
 
 
@@ -27,8 +40,8 @@ Kompromitterte kontoer blir ofte solgt på svartebørsen.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{case_2/bilder/prislite_kontore.png}
-    \label{fig:kjkk}
-    \caption[pris_kontoer]{Pris på kontoer}
+    \caption[pris-kontoer]{Pris på kontoer}
+    \label{fig:pris-kontoer}
 \end{figure}
 Kilde: https://krebsonsecurity.com/2017/12/the-market-for-stolen-account-credentials/
 
@@ -41,10 +54,10 @@ Denne analysen går ut på å identifisere rotårsaken til hvordan NTNU har så 
 
 \section{Metode}
 
-Metodebruken i denne analysen er delt inn i syv steg som vist i \hyperref[fig:prosess]{Figur 2} under. I hvert steg av denne prosessen brukes det ulike verktøy for å hjelpe til med å forstå problemet, finne rotårsak, og tilslutt implementere tiltak for å eliminere årsakene. 
+Metodebruken i denne analysen er delt inn i syv steg som vist i figur \ref{fig:prosess} under. I hvert steg av denne prosessen brukes det ulike verktøy for å hjelpe til med å forstå problemet, finne rotårsak, og tilslutt implementere tiltak for å eliminere årsakene. Verktøyene fra metoden som blir brukt i hver fase vises til høyre for fasene i figuren under. 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.6]{case_1/bilder/prosess.pdf}
-    \label{fig:prosess}
     \caption[Rotårsaksanalyseprosessen]{Rotårsaksanalyseprosessen definert av Andersen og Fagerli}
+    \label{fig:prosess}
 \end{figure}
