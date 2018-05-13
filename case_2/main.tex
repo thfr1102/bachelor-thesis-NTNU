@@ -93,6 +93,7 @@
 \thesistitlepage
 
 \tableofcontents
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
 \listoffigures
 \listoftables
 
@@ -106,16 +107,11 @@
 \input{case_2/7_problemeliminering.tex}
 \input{case_2/8_losningsimplementering.tex}
 \input{case_2/9_diskogkonk.tex}
-\input{case_2/vedlegg.tex}
 
 \bibliographystyle{ntnuthesis/ntnubachelorthesis}
 \bibliography{case_2/bibliografi}
 
 \appendix %after this line all chapters will have leters instead of numbers
-%\input{projectplan}
-%\input{gantt}
-%\input{main/meetinglog}
-%\input{progressreviews}
-%\input{worklog}
+\input{case_2/vedlegg.tex}
 
 \end{document}

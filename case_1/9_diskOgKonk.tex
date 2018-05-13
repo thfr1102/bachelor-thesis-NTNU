@@ -1,7 +1,7 @@
-\chapter{Diskusjon og konklusjon}
+\chapter{Diskusjon}
 Dette kapittelet eksisterer for å reflektere litt over prosessen og resultatene vi kom fram til. Vi vil også diskutere effekten ved bruk av rotårsaksanalyse til å løse informasjonssikkerhetsrelaterte hendelser knyttet til ulovlig fildeling. 
 
-\section{Konklusjon av resultater}
+\section{Resultater}
 Her nevner vi kort våre resultater i de viktigste fasene som hadde direkte innvirkning på identifisering og eliminering av rotårsaken. 
 
 \subsection{Datainnsamlingen}
@@ -26,11 +26,25 @@ Det vi kom frem til her var fire forskjellige løsninger for å fjerne rotårsak
 \subsection{Løsningsimplementeringen}
 Vi benyttet trediagram (figur \ref{fig:Tre-diagram}) for å illustrere de ulike arbeidsoppgavene som kreves for å implementere tiltakene.
 
-\section{Diskusjon og videre arbeid}
+\section{Diskusjon}
 %-- PRØV Å NEVNE BRUK AV ROTÅRSAKSANALYSE I INFOSEC --%
+
+\subsection{Rotårsak: Dårligere utvalg på alternative tjenester i Norge}
+Ut fra vår analyse viser det seg at dette er hovedårsaken til at studenter laster ned ulovlig. Siden Netflix og de andre strømmetjenestene har inntatt markedet har filmer og serier gruppert seg mellom de. Tjenestene ønsker også flest mulig orginale serier som bare er hos dem. Dette gjør at tilgjengeligheten på filmer og serier går ned, med mindre man abonnerer på alt. Men selv da får man ikke tilgang på alt. Mange filmer og serier er geografisk blokkert i Norge, som gjør tilgjengeligheten til et enda større problem. I musikkstrømmingsmiljøet er problemet noe mindre. Selv om ulovlig musikknedlasting ikke er borte, har det blitt redusert \cite{musikkstream}. Noe av grunnen til dette er at musikkbransjen er mer sentralisert i hvem som eier rettighetene, også kjent som et oligopol. Dette gjør det lettere for strømmetjenestene å skaffe lisenser for musikk, og kan tilby det folk trenger på ett sted. Det er også mye mindre orginalt innhold i disse tjenestene i forhold til strømmetjenester for filmer og serier. 
+
+\subsection{Rotårsak: Tjenestene er ikke verdt prisen}
+Jo flere tjenester det blir, jo mer må man betale for å få tilgang på mer materiale. Filmer og serier blir spredt utover markedet på flere tjenester som så og si koster det samme. Dette fører til at hver enkelt tjeneste blir mindre verdt pengene man må betale for å få tilgang. Det skal sies at strømming er en revolusjonerende løsning i forhold til å kjøpe hver enkelt film for seg selv, men hvis man må betale for fem forskjellige strømmetjenester for å få tilgang til det man har lyst på, hvorfor ikke bare laste ned gratis? Analysen vår viste at det å betale for tjenester ikke var noe problem for studentene; problemet var at de ikke føler de får det de betaler for. 
+
+\subsection{Rotårsak: Håndheving og kommunisering av lovene knyttet til ulovlig fildeling blir ikke prioritert}
+Det eksisterer allerede regler på ulovlig nedlasting på universitetsnettet. Problemet er derimot at det er vanskelig å håndheve de. Andre arbeidsoppgaver har heller blitt prioritert. Enkelte tiltak har heller ikke vært lovlige for NTNU å gjennomføre for å stoppe de som driver med ulovlig fildeling. For eksempel er det ikke lov å overvåke enkeltboliger hos Sit, og heller ikke straffe enkeltpersoner dersom de laster ned, siden det blir regnet som inngrep i den private sfæren. Dette har datatilsynet fortalt Seksjon for Digital Sikkerhet. 
+
+\subsection{Nytteverdien ved bruk av rotårsaksanalyse innen informasjonssikkerhet}
+Det er fortsatt få studier som prøver å sette lys på nytteverdien ved bruk av rotårsaksanalyse innen informasjonssikkerhet. I løpet av dette caset har vi gjort oss en erfaring basert på verktøybruken. Basert på resultatene for caset kan det sies å ha fungert bra, men på den ene siden vet vi ikke helt hvor bra det har fungert før tiltakene er implementert, og det er kontrollert at symptomene minker eller forsvinner helt. På den andre siden har et tidligere bachelorprosjekt allerede kommet frem til at nytteverdien er stor. De stilte blant annet spørsmål om hvor godt det fungerer på case med lite tid og ressurser, samt mye tid og ressurser \cite{RCARapport}. Det ble i begge sammenhenger konkludert med at det ga gode resultater. 
+
+\subsection{Diskusjon rundt prosessen}
 Problemforståelsen i informasjonssikkerhetssammenheng er ganske enkelt å utføre siden mange logger gir godt grunnlag for en kritisk hendelsestabell. I dette caset ble det brukt for å kartlegge hva som blir lastet ned, dette var informasjon som var viktig for å utforme spørreundersøkelsen. Det er et verktøy som er verdt å benytte ofte. Idémyldringen krever en del bakgrunnskunnskap om problemet og fagområdet, så hvis en ikke har gjort en god problemforståelse, kan det gå ut over idémyldringen. I dette caset fungerte det bra å gjøre den muntlig, men det vil også fungere bra å utføre en idéskriving dersom ikke alle kan være tilstede sammen. 
 
-Under datainnsamlingen var det vanskelig å planlegge gode tiltak for å distribuere spørreundersøkelsen, og det førte til et større tidsbruk enn det vi hadde sett for oss. Grunnet til større tidbruk var blant annet at SIT ikke gir ut tilgang til mailingliste som gjorde at vi måtte være mer kreative med innsamlingsmetodene. En annen faktor er at vi hadde liten til ingen erfaring med spørreundersøkelser, og tok innsamlingsprosessen litt på sparket. 
+Under datainnsamlingen var det vanskelig å planlegge gode tiltak for å distribuere spørreundersøkelsen, og det førte til et større tidsbruk enn det vi hadde sett for oss. Grunnet til større tidbruk var blant annet at Sit ikke gir ut tilgang til mailingliste som gjorde at vi måtte være mer kreative med innsamlingsmetodene. En annen faktor er at vi hadde liten til ingen erfaring med spørreundersøkelser, og tok innsamlingsprosessen litt på sparket. 
 
 Av tiltakene vi utførte for å få flere folk til å delta i spørreundersøkelsen, var det mest effektive tiltaket å poste undersøkelsen på facebooksider. Vi la også merke til at de kanalene vi delte spørreundersøkelsen på, så kunne vi forvente mest svar samme dag. Når det gikk lengre tid så falt svarresponsen og vi måtte purre etter en uke for å få opp antall svar. Å dele ut plakater fungerte også helt greit, men det kan virke litt nærgående for noen. 
 
@@ -42,9 +56,10 @@ Elimineringen var den siste store etappen, her brukte vi de seks tenkehattene, d
 
 Implementeringen kunne vi ikke gjøre så mye med selv, men tiltakene beskrevet er ikke veldig avanserte selv om det kan kreve mye tid og ressurser siden det er snakk om ganske drastiske endringer. 
 
+\subsection{Videre arbeid}
 Videre arbeid kan være å gå gjennom forslagene våre, og se om noen av disse er fornuftige å implementere, og vil være verdt kostnadene. Ulovlig fildeling på skolenettet er et veldig vanskelig problem å fjerne rotårsaken til siden tilgjengelighet er den store drivkraften bak nedlasting. Det kan også være nyttig å undersøke hvilke opphavsrettshavere som sender notifikasjoner, og se om skolen kan tilby tjenester hvis de fleste kommer fra ett sted. Videre arbeid kan også inkludere en risikoanalyse på risikoen dersom skolen ikke gjør noe med dette problemet.
 
-\section{Tidsbruk}
+\subsection{Tidsbruk}
 Kommer...
 
 %Røttene til dette problemet strekker seg dessverre dypere enn våre landegrenser og det er begrenset hva NTNU kan gjøre for å fjerne disse.

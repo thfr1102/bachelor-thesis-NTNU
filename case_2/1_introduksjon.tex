@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Oppgavebeskrivelse}
-Denne rapporten er en delrapport i en større oppgave om rotårsaksanalyse. Dette caset går inn på rotårsaken til at universitetet har så mange kompromitterte brukerkontoer. Når vi snakker om en kompromittert bruker i denne rapporten mener vi at passord og brukernavn har kommet på avveie. I rapporten ser vi på både ansatt- og studentkonto. 
+Denne rapporten er en delrapport i en større oppgave om rotårsaksanalyse. Dette caset går inn på rotårsaken til at universitetet har så mange kompromitterte brukerkontoer. Når vi snakker om en kompromittert bruker i denne rapporten mener vi at all autentiseringsdata til en brukerkonto er kommet på avveie. I rapporten ser vi på både ansatt- og studentkonto. 
 
 I 2017 var kompromitterte kontoer alene årsaken til omtrent 70 sikkerhetshendelser ved NTNU. I desember 2017 kom det også en stor datadump som innholdt over 5000 kontoer affiliert med NTNU, som alle inneholdt både brukernavn og passord. Av disse var det 101 som fortsatt var aktive i systemene til NTNU, det vil si brukernavn og passord var fortsatt gyldige.
 
@@ -49,7 +49,11 @@ Kilde: https://krebsonsecurity.com/2017/12/the-market-for-stolen-account-credent
 Dette viser at det er et stort marked for brukerkontoer, og siden NTNU har mange samarbeidspartnere er de et stort mål for trusselaktørene. 
 
 
-Denne analysen går ut på å identifisere rotårsaken til hvordan NTNU har så mange kompromitterte brukerkontoer.
+Denne analysen går ut på å identifisere rotårsaken til hvordan NTNU har så mange kompromitterte brukerkontoer, og i løpet av rapporten vil vi svare på følgende forskningsspørsmål:
+\begin{itemize}
+    \item Hva er rotårsaken til at brukerkontoer ved NTNU blir kompromittert?
+    \item Hvordan fungerer rotårsaksanalyse i et case som omhandler misbruk av datakraft?
+\end{itemize}
 
 
 \section{Metode}
@@ -57,7 +61,7 @@ Denne analysen går ut på å identifisere rotårsaken til hvordan NTNU har så 
 Metodebruken i denne analysen er delt inn i syv steg som vist i figur \ref{fig:prosess} under. I hvert steg av denne prosessen brukes det ulike verktøy for å hjelpe til med å forstå problemet, finne rotårsak, og tilslutt implementere tiltak for å eliminere årsakene. Verktøyene fra metoden som blir brukt i hver fase vises til høyre for fasene i figuren under. 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.6]{case_1/bilder/prosess.pdf}
+    \includegraphics[scale=0.6]{case_2/bilder/RCA-Prosess-case-2.pdf}
     \caption[Rotårsaksanalyseprosessen]{Rotårsaksanalyseprosessen definert av Andersen og Fagerli}
     \label{fig:prosess}
 \end{figure}

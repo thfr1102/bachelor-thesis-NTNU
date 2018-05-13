@@ -1,18 +1,73 @@
 \chapter{Datainnsamling}
-Målet med denne fasen er å samle inn informasjon om problemet, og prøve å få informasjon som kan være med på å identifisere rotårsaken i de senere stegene i prosessen. Siden vi hadde ganske lite tid på dette siste caset, består informasjonsinnsamlingen vår av bare et kvalitativt intervju med Christoffer Vargtass som jobber på SOCen til NTNU. Vi håper at siden problemstillingen er av en så stor teknisk art holder det å snakke med Christoffer som har god teknisk erfaring og kunnskap fra NTNU sin SOC.
+Målet med denne fasen er å samle inn informasjon om problemet, og prøve å få informasjon som kan være med på å identifisere rotårsaken i de senere stegene i prosessen. Siden vi hadde begrenset med tid på dette siste caset, består informasjonsinnsamlingen vår av bare et kvalitativt intervju med en senior sikkerhetsanalytiker som jobber på SOCen til NTNU. Vi tenker at siden problemstillingen er av en så stor teknisk art holder det å snakke med sikkerhetanalytikeren som har god teknisk erfaring og kunnskap fra NTNU sin SOC.
 
 Målet i denne fasen er å samle inn et så bredt aspekt av informasjon som mulig gjennom et par mulige verktøy og teknikker beskrevet i boka om rotårsaksanalyse\cite{RCA}. Dette kapittelet går inn på hvordan informasjonen til caset ble samlet inn.
 
 \section{Kvalitativt intervjue}
-Før intervjuet med Christoffer fikk vi et utdrag av alarmer som SOCen får av de kjente signaturene som har med cryptomining å gjøre. Disse alarmene stammer fra minere som folk har fått lagt inn på pcene sine. Minere i browser som er lagt inn i diverse nettsider og trojanere. 
+Før intervjuet fikk vi et utdrag av alarmer som SOCen får av de kjente signaturene som omhandler kryotoutvinning. Disse alarmene stammer fra ``utvinnere'' som folk har fått lagt inn på PCene sine. ``Utvinning'' foregår på diverse nettsider når brukere besøker disse \cite{12577042320171101} eller som skadevare på maskinene. 
 
 \section{Ønsker utbytte}
-Ønsket utbytte med dette intervjuet var å få et overblikk over hvordan minerene blir brukt, hvordan de eksterne aktører får minerne inn på pcene til de som oppholder seg på NTNU nettet. 
+Ønsket utbytte med dette intervjuet var å få et overblikk over hvordan minerene blir brukt, hvordan de eksterne aktører får utvinnerene inn på PCene til de som oppholder seg på NTNU nettet. 
 
 \section{Gjennomføring}
-Vi utformet et intervju som skulle brukes med Christoffer, sprøsmålene bestod av diverse temaer vi ønsket å få lys på for å finne rotårsaken. En del av spørsmålene gikk på å finne ut hvordan utvinningen blir oppdaget, hva slags handlingsrom de har for å håndtere hendelser, og hvordan utvinningen som regel foregår.
-\section{Resultater}
+Vi utformet et intervju der sprøsmålene bestod av diverse temaer vi ønsket å få lys på for å finne rotårsaken. En del av spørsmålene gikk på å finne ut hvordan utvinningen blir oppdaget, hva slags handlingsrom de har for å håndtere hendelser, og hvordan utvinningen som regel foregår.
 
+Vi hadde noen hypoteser når vi utformet intervjuspørsmålene, disse var:
+\begin{itemize}
+    \item Det er tekniske løsninger som kan brukes til å fikse store deler av problemet.
+    \item Det er begrenset handlingsrom for hva som kan bli gjort mot interne som utvinner.
+    \item Lite bevissthet rundt regelverket til NTNU angående bruk av universitetets ressurser.
+    \item Utviklingen av utvinning følger kryptovalutaen sin verdi.
+    \item Dataer blir kompromittert gjennom de vanlige formene, phishing og wateringholes.
+\end{itemize}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|m{30em}|} 
+        \hline
+             \cellcolor{yellow} Spørsmål  \\
+        \hline
+          Hva er de typiske angrepsvektorene?  \\
+         \hline
+         Tar det lang tid å oppdage trojanere i nettverket? \\ 
+         \hline
+         Hva gjør Seksjon for Digital Sikkerhet når de oppdager trojanere? \\
+         \hline
+         Hvordan fant dere ut om HPC clusterne blir misbrukt? \\
+         \hline
+         Hvordan fant dere ut at det var internt misbruk?\\
+         \hline
+         Har dere andre tiltak enn å stenge internett til de som miner? \\
+         \hline
+         hva er grunnen til at dere ikke har implementert noe slike tiltak? \\
+         \hline
+         Hva tror du er oppfatningen blant dine kollegaer er angående utvinning. Vet folk det er ulovlig eller har de ikke tenkt så mye over det og utvinner fordi det er en trend? \\
+         \hline
+         Hva er måten dere for du snakket tidligere om at dere så mange av de lommebøkene som ble brukt var fra mørke siden av nettet?  \\
+         \hline
+         Hvordan ser dere at de går til disse lommebøkene? \\
+         \hline
+         Hvordan skal dere implementere kryptoutvinning i neste IT-reglement? \\
+          \hline
+         Tenker folk over at det ikke er lov til å utvinne krypto i henhold til IT-reglementet? \\
+          \hline
+         Har dere noen tiltak på utvinning på nettsider? \\
+          \hline
+         Er det like stor økning nå som det var før jul? \\
+          \hline
+         Økningen er det gjort av de profesjonelle aktørene eller er det folk som setter frivillig opp utvinnere? \\
+          \hline
+         Dere hadde ikke sett noe tilfeller av brutforcede PCer og servere som ble installert kryptominere på, etter at de ble brutforcet?  \\
+          \hline
+         Er det noen regler på hva ansatte får lov til å legge på serverne? \\
+          \hline
+         Har dere noen tilfeller av PCer på datalabber der studenter har installert kryptoutvinning?
+          \hline
+    \end{tabular}
+    \caption[Spørsmål]{spørsmål til intervju}
+    \label{tab:spm-intervju}
+\end{table}
+Under intervjuet valgte vi å ta lydopptak, slik at vi lett kunne gå tilbake til svarene for å få det mest mulig nøyaktig til neste fase. Når intervjuet var ferdig transkriberte vi det.
 
 \section{Konklusjon av verktøy}
-Intervjuet fungerte bra, vi fikk mye informasjon om de tekniske aspektene ved problemet, og litt informasjon om mulige tiltak, og hvorfor noen av disse tiltakene ikke allerede er blitt implementert. Vi skulle gjerne ha hatt flere intervjuer å base dataanalysen vår på i neste steg, men på grunn av tidsbegrensninger ble dette ikke gjort.
+Intervjuet fungerte bra. Vi fikk mye informasjon om de tekniske aspektene ved problemet. Litt informasjon om mulige tiltak, og hvorfor noen av disse tiltakene ikke allerede er blitt implementert. Vi skulle gjerne ha hatt flere intervjuer å base dataanalysen vår på i neste steg, men på grunn av tidsbegrensninger ble dette ikke gjort.

@@ -95,11 +95,12 @@
 
 
 \tableofcontents
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
 \listoffigures
 \listoftables
 
 \input{main/1_Introduksjon/1_begreper.tex}
-\input{main/1_Introduksjon/2_kortfattet_sammendrag.tex}
+%\input{main/1_Introduksjon/2_kortfattet_sammendrag.tex}
 \input{main/1_Introduksjon/3_bakgrunn.tex}
 \input{main/1_Introduksjon/4_problemstilling.tex}
 \input{main/1_Introduksjon/5_motivasjon.tex}
@@ -114,11 +115,11 @@
 \input{main/4_Metode/1_metodevalg.tex}
 \input{main/4_Metode/2_metode.tex}
 \input{main/4_Metode/3_gjennomforelse.tex}
-\input{main/5_Resultater/1_resultater.tex}
 \input{main/5_Resultater/2_case1_resultater.tex}
 \input{main/5_Resultater/3_case2_resultater.tex}
 \input{main/5_Resultater/4_case3_resultater.tex}
 \input{main/6_Diskusjon/1_diskusjon.tex}
+\input{main/9_retningslinjer/retningslinjer.tex}
 \input{main/7_Konklusjon/1_konklusjon.tex}
 %\input{main/}
 
@@ -128,10 +129,11 @@
 \bibliography{main/referanser}
 
 \appendix %after this line all chapters will have leters instead of numbers
-%\input{projectplan}
-%\input{gantt}
-\input{main/8_Vedlegg/motelogger.tex}
-%\input{progressreviews}
-%\input{worklog}
+\input{main/8_Vedlegg/1_sporreundersokelser.tex}
+\input{main/8_Vedlegg/2_plakat.tex}
+\input{main/8_Vedlegg/3_frekvenstabeller_case1.tex}
+\input{main/8_Vedlegg/4_diverse_histogrammer.tex}
+\input{main/8_Vedlegg/5_statistisk_analyse_case2.tex}
+\input{main/8_Vedlegg/6_flytdiagrammer.tex}
 
 \end{document}

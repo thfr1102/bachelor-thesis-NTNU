@@ -55,7 +55,7 @@ Et spørsmål som ble spurt i spørreundersøkelsen var hvor godt kjent de var m
     \caption[Konsekvens av å laste ned]{Hvor mange som kjenner til konsekvenser ved å laste ned}
 \end{figure}
 
-Det viser seg faktisk at de som laster ned har en bedre kjennskap til konsekvensene enn de som ikke gjør det. Det kan kanskje ha noe å gjøre med at de er mer opptatt av problemområdet enn de som ikke laster ned. De som ikke laster ned i første omgang har kanskje ingen grunn til å sjekke konsekvensene av det. I tillegg fant vi ut at IT-studenter kjenner konsekvenser bedre enn de andre, og de har også høyere andel nedlastere. Vi prøvde å kjøre samme test på hvor godt de kjenner til IT-reglementet til NTNU \cite{ITReg} og kom til samme konklusjon som over. Dette histogrammet kan sees \hyperref[fig:reglement-lasterned]{her}. En grunn til dette er også igjen at IT-studenter kjenner bedre til IT reglementet, som vist \hyperref[fig:reglement-fakultet]{her}, og de er i overvekt. Så dette må tas i betraktning. 
+Det viser seg faktisk at de som laster ned har bedre kjennskap til konsekvensene enn de som ikke gjør det. Det kan kanskje ha noe å gjøre med at de er mer opptatt av problemområdet enn de som ikke laster ned. De som ikke laster ned i første omgang har kanskje ingen grunn til å sjekke konsekvensene av det. I tillegg fant vi ut at IT-studenter kjenner konsekvenser bedre enn de andre, og de har også høyere andel nedlastere. Vi prøvde å kjøre samme test på hvor godt de kjenner til IT-reglementet til NTNU \cite{ITReg} og kom til samme konklusjon som over. Dette histogrammet kan sees \hyperref[fig:reglement-lasterned]{her}. En grunn til dette er også igjen at IT-studenter kjenner bedre til IT reglementet, som vist \hyperref[fig:reglement-fakultet]{her}, og de er i overvekt. Så dette må tas i betraktning. 
 
 En mulig teori vi ønsket å prøve ut var om mange som lastet ned ikke kjente til konsekvensene ved ulovlig nedlasting eller NTNU sitt IT-reglementet, og lastet ned på grunn av det. Dette ble altså delvis motbevist.
 
@@ -85,7 +85,7 @@ Histogrammer er et velkjent og godt verktøy innen statistikk og fungerer godt i
 
 %------------------------------------------------------ANOVA_ANALYSE----------------------------------------------------
 \section{Statistisk analyse}
-I denne delen benytter vi et par statistiske verktøy for å analysere dataene. Verktøyene vi har brukt er en independent-samples t-test og en one-way ANOVA. Begge disse ble beregnet i det statistiske verktøyet SPSS.
+I denne delen benytter vi et par statistiske verktøy for å analysere dataene. Verktøyene vi har brukt er en independent-samples t-test og en one-way ANOVA. Begge disse ble beregnet i det statistiske verktøyet SPSS. Vi regner med en signifikans på \[\alpha \le 0,05\]
 
 
 \subsection{Ønsket utbytte}
@@ -124,6 +124,7 @@ I denne analysen ser vi på forskjeller mellom IT fakultetet og de andre fakulte
     \label{fig:fakultet_pastander_descriptive}
 \end{figure}
 
+I tabellen over ser vi at IT studentene sier seg mer uenig i samtlige påstander, noen mer enn andre, mens de er bedre kjent med IT reglementet. Det er spesielt påstandene om råd til alternativer, anonymitet, sannsynlighet for å bli tatt og kjennskap til IT reglementet som er mest relevant å se på. ANOVA analysen under viser om det er noe signifikans mellom svarene. 
 %-----------------------------------------------ANOVA-------------------------------------------------------
 \begin{figure}[H]
     \centering
@@ -132,7 +133,7 @@ I denne analysen ser vi på forskjeller mellom IT fakultetet og de andre fakulte
     \label{fig:fakultet_pastander_anova}
 \end{figure}
 
-Det viser seg å være signifikant forskjell på IT og de andre fakultetene når det kommer til lav sannsynlighet for å bli tatt og kjennskap til IT reglement. Respondenter fra IT fakultetet er mer uenig i at de laster ned på grunn av lav sannsynlighet for å bli tatt (sig. 0,050), og de kjenner også IT reglementet bedre (sig. 0,025). 
+Det viser seg å være signifikant forskjell på IT og de andre fakultetene når det kommer til lav sannsynlighet for å bli tatt og kjennskap til IT reglement. Respondenter fra IT fakultetet er mer uenig i at de laster ned på grunn av lav sannsynlighet for å bli tatt \((\alpha = 0,050)\), og de kjenner også IT reglementet bedre \((\alpha = 0,025)\). 
 
 %-----------------------------------------------DESCRIPTIVES------------------------------------------------
 \begin{figure}[H]
@@ -142,11 +143,11 @@ Det viser seg å være signifikant forskjell på IT og de andre fakultetene når
     \label{fig:fakultet_pastander_descriptive}
 \end{figure}
 
-Kvinner er 1 og menn er 2 i disse tabellene.
+Kvinner er 1 og menn er 2 i disse tabellene. Vi ser fra tabellen over at kvinner svarer at de kjenner til IT-reglementet noe dårligere enn menn. 
 %-----------------------------------------------ANOVA-------------------------------------------------------
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.7]{case_1/bilder/kjonn_kjent_anova.pdf}
+    \includegraphics[scale=0.8]{case_1/bilder/kjonn_kjent_anova.pdf}
     \caption{Forskjellen mellom kjønnene når det kommer til kjennskap til IT reglement}
     \label{fig:fakultet_pastander_anova}
 \end{figure}

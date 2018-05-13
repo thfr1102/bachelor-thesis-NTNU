@@ -1,14 +1,29 @@
 \chapter{Diskusjon og konklusjon}
-Dette kapittelet eksisterer for å reflektere litt over prosessen og resultatene vi kom fram til. Vi vil også diskutere effekten ved bruk av rotårsaksanalyse til å løse informasjonssikkerhetsrelaterte hendelser knyttet til kompromitterte kontoer.
+Dette kapittelet eksisterer for å drøfte og konkludere prosessen og resultatene vi kom fram til. Vi vil også diskutere effekten ved bruk av rotårsaksanalyse til å løse informasjonssikkerhetsrelaterte hendelser knyttet til kompromitterte kontoer. 
 
 \section{Diskusjon}
+Utgangspunktet i denne drøftingen er hvorvidt rotårsakene vi kom frem til i dette caset er reelle rotårsaker som, hvis fjernet, vil fjerne symptomene helt. I tillegg ser vi på hvordan erfaringen fra dette caset viser hvor godt rotårsaksanalyse fungerer i informasjonssikkerhet. 
 
-1
-\section{Konklusjon}
+Resultatene våre viste at problemet er sammensatt og at det er flere rotårsaker som eksisterer. 
 
+\subsection{Rotårsak: Gjenbruk av brukerkredentialier på tredjepartssider}
+Vi har vurdert gjenbruk av brukerkredentialier på andre tjenester som den mest relevante rotårsaken til at NTNU sine brukerkontoer blir kompromittert. Dette gjør vi på bakgrunn av at det var over halvparten som hadde svart at de hadde brukt sine NTNU kredentialier på flere tjenester. Dette betyr ikke nødvendigvis at det er den rotårsaken en bør frykte mest. I en studie gjort på oppdrag fra Google – som tok utgangspunkt i e-postadresser – viste det seg at selv om studien fastslo at det var desidert flest som var blitt kompromittert av datainnbrudd på andre tjenester, hadde flere hadde byttet passord siden de var blitt kompromittert, sammenlignet med de som hadde blitt kompromittert av phishing \cite{46437}. Likevel viser studien også den store mengden kontoer som blir kompromittert som følger av datainnbrudd ved andre tjenester, som bekrefter at det fortsatt er et stort problem. 
+
+\subsection{Rotårsak: Phishing}
+Phishing var en av årsakene som ble belyst, og det viste seg at brukerne ikke hadde fått tilstrekkelig opplæring i deteksjon av phishing e-post. Phishing er, og har lenge vært, en stor årsak til kompromitterte kontoer \cite{SophPhish}. Phishing skjer også svært hyppig; undersøkelsen vår viste at de aller fleste hadde lagt merke til flere hendelser med phishing på sin NTNU e-post. Phishing kan være vanskelig å gjøre noe med. Vår formening er at det alltid vil være en risiko, uansett hva slags tiltak en implementerer. På en side kan både tekniske og bevissthetsmessige tiltak hjelpe, men disse vil aldri fjerne rotårsaken helt. 
+
+\subsection{Rotårsak: For dårlig kjennskap til styrende dokumenter}
+Det er alltid en vanskelig oppgave å gjøre de ansatte oppmerksom på beste praksis innen informasjonssikkerhet. Dette gjelder også NTNU siden det i resultatene våre ble fremhevet at de ansatte hadde liten kjennskap til reglementer, retningslinjer og prinsipper knyttet til IT og informasjonssikkerhet. Det er imidlertid en pågående debatt om det i det hele tatt er verdt tiden og pengene i å forsøke å trene opp ansatte. Mange mener disse pengene kan bli bedre brukt på andre vis. Bruce Schneider skriver i sin blogg at dette er bortkastet tid og penger \cite{SecAware}. Mange er enige med han, men det er også mange eksperter som mener det er nyttig. Vi mener derimot at det er nyttig, men ressursbruken på dette burde holdes lav. 
+
+\subsection{Rotårsak: Utilstrekkelig tilgangskontroll på brukerkontoer}
+Vi har kommet frem til at dette er et problem som kan løse mange av symptomene ved hjelp av tilgangskontroll. 2FA med sms er noe av det som blir anbefalt av oss. Dersom 2FA blir benyttet vil det hindre de fleste kontoer i å bli kompromittert, selv om kredentialiene blir kjent for trusselaktørene. Det er imidlertid mange som mener at SMS meldinger er en usikker løsning på 2FA, siden sms meldinger er relativt enkelt å avlytte \cite{2FA}. De fleste anbefaler enten autentisering gjennom applikasjon eller fysisk kodebrikke. Disse metodene er dessverre noe vanskeligere å implementere, og det er heller ikke alle som har en smarttelefon som kan bruke applikasjonene som kreves. Et annet tiltak som blir mye brukt ellers er å validere brukerkontoen for spesifikke maskiner når de logges på for første gang, eller bare gi beskjed om ny innlogging et annet sted slik at en blir oppmerksom på at kontoen kan være kompromittert. Disse brukes av flere tjenester for å informere om og hindre kontoer fra å bli kompromittert. Google gir deg både beskjed når nye innlogginger finner sted, og gir deg muligheten til å legge til klarerte enheter \cite{trustcomp}. Dette fungerer ofte som en erstatning til 2FA hver gang du logger på. Siden dette har vært effektivt i andre sammenhenger ser vi ingen grunn til at dette ikke vil fungere bra hos NTNU, annet enn den ekstra anstrengelsen for brukerne når de logger på. 
+
+\subsection{Nytteverdien ved bruk av rotårsaksanalyse innen informasjonssikkerhet}
+Det er fortsatt få studier som prøver å sette lys på nytteverdien ved bruk av rotårsaksanalyse innen informasjonssikkerhet. I løpet av dette caset har vi gjort oss en erfaring basert på verktøybruken. Basert på resultatene for caset kan det sies å ha fungert bra. På den ene siden vet vi ikke helt hvor bra det har fungert før tiltakene er implementert, og det er kontrollert at symptomene minker eller forsvinner helt. På den andre siden har et tidligere bachelorprosjekt allerede kommet frem til at nytteverdien er stor, både med mye og lite tid og ressurser \cite{RCARapport}. Vi mener at nytteverdien kommer an på hvor god tilgang en har på relevant informasjon. I dette caset fikk vi et godt datagrunnlag som ga oss gode muligheter til å avdekke rotårsakene. Vi anser dette å være kritisk for hvor god nytteverdien er. Nytteverdien i forhold til tid diskuteres ytterligere i seksjon \ref{sek:tidsbruk_case2}. 
 
 \section{Tidsbruk}
+\label{sek:tidsbruk_case2}
 
 
 \section{Videre arbeid}
-Undersøke hele NTNU, passordvaner, e-post, kjennskap til retningslinjer osv. 
+Siden vi tok et sample bare fra de som tidligere hadde blitt kompromittert kan det være interessant å undersøke hele NTNU når det kommer til passordvaner, e-post, kjennskap til retningslinjer osv. Deretter kan resultatene sammenlignes og se om det er noen forskjeller som bør tas i betraktning. Annet videre arbeid kan være å undersøke keylogging som en mulig årsak til kompromitterte kontoer. Vi gikk ikke så mye inn på det i denne rapporten, men det kan være interessant å se på i forlengelse av infeksjon fra ondsinnet programvare. 
