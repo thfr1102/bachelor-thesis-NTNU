@@ -486,122 +486,190 @@ Gjennomføringen av trediagrammet startet med å gruppere hovedtiltak til rotår
 \section{Case 3: Misbruk av NTNU sin infrastruktur til utvinning av kryptovaluta}
 
 \subsection{Problemforståelse}
-
 \subsubsection{Ytelsesmatrise}
 
 \paragraph{Valg og ønsket utbytte av verktøy}
 
+Ved bruk av dette verktøyet er det ønskelig å undersøke hvordan eksisterende kontroller fungerer i forhold til deres viktighet for NTNU. 
 
 \paragraph{Spesifiseringer}
 
 
 \paragraph{Gjennomføring}
+Prosessen startet ved å finne ut hvilke aspekter av problemet som skulle vurderes. Gruppen kom fram til å vurdere formene for kontroller som stopper eller reduserer sjansen for at trusselaktørene misbruker NTNU sin infrastruktur. 
 
+Disse skulle vurderes basert på viktighet og ytelse. 
+
+Matrisen ble tegnet opp i Excel der hver akse ble konstruert fra en til ni, og matrisen ble delt inn i fire områder:
+\begin{description}
+    \item[Uviktig:] Når både viktigheten og ytelsen er fra en til fem.
+    \item[Overdrevent:] Når viktigheten er fra en til fem og ytelsen er fra fem til ni.
+    \item[Ok:] Når både viktigheten og ytelsen er fra fem til ni.
+    \item[Må forbedres:] Når viktigheten er fra fem til ni, mens ytelsen bare er fra en til fem.
+\end{description}
 
 
 \subsection{Idémyldring}
-
-\subsubsection{Nominell gruppeteknikk (NGT)}
-
+\subsubsection{Idémyldring}
 \paragraph{Valg og ønsket utbytte av verktøy}
-
+Ønsket utbytte ved å bruke idémyldring er å få en forståelse av hva som kan være rotårsaken til at NTNU sine ressurser blir misbrukt til utvinning av kryptovaluta. Vi ønsker også å skape et godt grunnlag av idéer som kan brukes i datainnsamling i neste del av oppgaven.
 
 \paragraph{Spesifiseringer}
 
 
 \paragraph{Gjennomføring}
+Vi startet idémyldringen med å finne ut hva som burde fokuseres på av hvordan og hvorfor skolen sine ressurser blir missbrukt til utvinning av kryptovaluta. Vi kom frem til at begge deler var like viktige, og at vi burde ha to idémyldringer for å komme med flest mulige idéer som ville kunne hjelpe oss i hva som burde spørres om i datainnsamlingen. De to ``basene'' til idémyldring vi brukte i idémyldringsprossesen var: hvordan eller hvorfor ``blir NTNU sine ressurser misbrukt i utvinning av kryptovaluta''. Idémyldring prosessen var litt annerledes enn de vi hadde i de andre oppgavene, der vi denne gangen hadde et mer idéskrivingsoppsett, der vi alle skrev inn de idéene vi hadde inn i et dokument.
 
 
+\subsubsection{Nominell gruppeteknikk (NGT)}
+\paragraph{Valg og ønsket utbytte av verktøy}
+Ettersom vi har dårligere tid på dette caset enn på de tidligere, har vi valgt å benytte NGT for å prioritere idéer. NGT er også et verktøy vi er interessert i å prøve ut for hovedrapporten.
+\paragraph{Spesifiseringer}
+
+
+\paragraph{Gjennomføring}
+NGT ble utført med at vi alle satt oss ned sammen og hadde 15 poeng hver å gi til forskjellige idéer. Idéene ble laget utifra forarbeidet som var blitt gjort i idémyldringsprosessen, de idéene som lignet på hverandre ble slått sammen og noen ble litt omformulert. Idéene skulle få poengene 1, 2, 3, 4 eller 5 og alle disse 15 poengene skulle gis ut. Hver person ga ut sine 15 poeng for hva de trodde ville være det viktigste å fokusere på videre i analysen, og disse dataene kan sees i tabell \ref{tab:NGT}.
 
 \subsection{Datainnsamling}
-
 \subsubsection{Intervju}
 
 \paragraph{Valg og ønsket utbytte av verktøy}
+Siden vi hadde begrenset med tid, en måned på dette siste caset, består informasjonsinnsamlingen av et kvalitativt intervju. Intervjuet gjennomføres med en senior sikkerhetsanalytiker som jobber på SOCen til NTNU. På grunn av tidsbegrensningen og problemets tekniske art, begrenser vi datainnsamlingen til ett intervju.
 
-
+Ønsket utbytte med dette intervjuet er å få et overblikk over hvordan utvinnere blir brukt, og hvordan de eksterne aktører får utvinnerene inn på PCene til de som oppholder seg på NTNU nettet.
 \paragraph{Spesifiseringer}
 
 
 \paragraph{Gjennomføring}
+Vi utformet et intervju der sprøsmålene bestod av diverse temaer vi ønsket å få lys på for å finne rotårsaken. En del av spørsmålene gikk på å finne ut hvordan utvinningen blir oppdaget, hva slags handlingsrom de har for å håndtere hendelser, og hvordan utvinningen som regel foregår.
 
+Vi hadde noen hypoteser når vi utformet intervjuspørsmålene, disse var:
+\begin{itemize}
+    \item Det er tekniske løsninger som kan brukes til å fikse store deler av problemet.
+    \item Det er begrenset handlingsrom for hva som kan bli gjort mot interne som utvinner.
+    \item Lite bevissthet rundt regelverket til NTNU angående bruk av universitetets ressurser.
+    \item Utviklingen av utvinning følger kryptovalutaen sin verdi.
+    \item Dataer blir kompromittert gjennom de vanlige formene, phishing og wateringholes.
+\end{itemize}
 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|m{30em}|} 
+        \hline
+             \cellcolor{yellow} Spørsmål  \\
+        \hline
+          Hva er de typiske angrepsvektorene?  \\
+         \hline
+         Tar det lang tid å oppdage trojanere i nettverket? \\ 
+         \hline
+         Hva gjør Seksjon for Digital Sikkerhet når de oppdager trojanere? \\
+         \hline
+         Hvordan fant dere ut om HPC clusterne blir misbrukt? \\
+         \hline
+         Hvordan fant dere ut at det var internt misbruk?\\
+         \hline
+         Har dere andre tiltak enn å stenge internett til de som miner? \\
+         \hline
+         hva er grunnen til at dere ikke har implementert noe slike tiltak? \\
+         \hline
+         Hva tror du er oppfatningen blant dine kollegaer er angående utvinning. Vet folk det er ulovlig eller har de ikke tenkt så mye over det og utvinner fordi det er en trend? \\
+         \hline
+         Hva er måten dere for du snakket tidligere om at dere så mange av de lommebøkene som ble brukt var fra mørke siden av nettet?  \\
+         \hline
+         Hvordan ser dere at de går til disse lommebøkene? \\
+         \hline
+         Hvordan skal dere implementere kryptoutvinning i neste IT-reglement? \\
+          \hline
+         Tenker folk over at det ikke er lov til å utvinne krypto i henhold til IT-reglementet? \\
+          \hline
+         Har dere noen tiltak på utvinning på nettsider? \\
+          \hline
+         Er det like stor økning nå som det var før jul? \\
+          \hline
+         Økningen er det gjort av de profesjonelle aktørene eller er det folk som setter frivillig opp utvinnere? \\
+          \hline
+         Dere hadde ikke sett noe tilfeller av brutforcede PCer og servere som ble installert kryptominere på, etter at de ble brutforcet?  \\
+          \hline
+         Er det noen regler på hva ansatte får lov til å legge på serverne? \\
+          \hline
+         Har dere noen tilfeller av PCer på datalabber der studenter har installert kryptoutvinning?
+          \hline
+    \end{tabular}
+    \caption[Spørsmål]{spørsmål til intervju}
+    \label{tab:spm-intervju}
+\end{table}
+Under intervjuet valgte vi å ta lydopptak, slik at vi lett kunne gå tilbake til svarene for å få det mest mulig nøyaktig til neste fase. Når intervjuet var ferdig transkriberte vi det.
 
 \subsection{Dataanalyse}
-
 \subsubsection{Affinitetsdiagram}
 
 \paragraph{Valg og ønsket utbytte av verktøy}
+Affinitetsdiagram brukes til å analysere data som det ikke er mulig å nummerere, eksempelvis meninger eller ideer. Affinitetsdiagram grupperer data og finner de underliggende korrelasjoner og likhetstrekk i gruppen.
 
+Ønsket utbytte av å bruke affinitetsdiagram er å finne bindinger eller fellesnevnere som kan være til hjelp for å fjerne rotårsaken.
 
 \paragraph{Spesifiseringer}
 
 
 \paragraph{Gjennomføring}
+Analysen ble gjennomført med å ta transkripsjon av intervjuet og stykke den opp i fem hovedgrupper.     
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{case_3/bilder/AD.pdf}
+    \label{fig:AD_miner}
+    \caption[Analyse av intervju]{Hvordan fungerer utvinning av kryptovaluta ved NTNU?}
+\end{figure}
+
+Vi finner mulige årsaker og tiltak som er satt på plass, og forhåpentligvis er rotårsaken blant dem.
 
 
 \subsection{Rotårsaksidentifisering}
-
 \subsubsection{5 Whys}
 
 \paragraph{Valg og ønsket utbytte av verktøy}
-
+Ved å bruke 5 Whys ønsker  vi å finne ut hva som er rotårsaken til problemet. Målet her er å få frem så mange rotårsaker som mulig, som vi kan bruke på rotårsakselimineringen. 
 
 \paragraph{Spesifiseringer}
 
 
 \paragraph{Gjennomføring}
-
+Med dette verktøyet tar vi utgangspunkt i casebeskrivelsen; nemlig rotårsaken til kryptoutvinning på NTNU. Ut fra dette brukte vi funnene fra analysen for å komme på årsaker, samt prøvde å idémyldre et par nye. For hver av disse årsakene ble det spurt: ``Hvorfor er dette en årsak av det originale problemet?''. For hvert svar spør vi hvorfor igjen og igjen helt til vi finner rotårsaken. Det ble tatt utgangspunkt i fem iterasjoner, men det er mulighet for flere eller færre avhengig av om spørsmålet kan besvares på en fornuftig måte. 
 
 
 \subsubsection{Feiltreanalyse}
-
 \paragraph{Valg og ønsket utbytte av verktøy}
-
+Ved bruk av dette verktøyet ønsker vi å få en oversikt over koblinger mellom de forskjellige årsakene. Vi ønsker også å få sortert ut de årsakene som NTNU ikke har mulighet til å gjøre.
 
 \paragraph{Spesifiseringer}
 
 
 \paragraph{Gjennomføring}
-
+Med dette verktøy tar vi utgangspunktet i resultatet fra 5 Whys til å finne rotårsakene. Her går vi steg for steg nedover og ser på hva som er årsaken til at enhver uønsket hendelse inntreffer.
 
 
 \subsection{Rotårsakseliminering}
-
 \subsubsection{Systematisk Innovativ Tenkning (SIT)}
 
 \paragraph{Valg og ønsket utbytte av verktøy}
-
+Ved å bruke SIT-metoden ønsker vi å få kreative idéer på hvordan vi kan finne en løsning til utvinning av kryptovaluta ved NTNU. 
 
 \paragraph{Spesifiseringer}
 
 
 \paragraph{Gjennomføring}
-
+SIT burde helst gjennomføres av 10-12 personer, fra en rekke forskjellige fagområder, men siden vi ikke hadde så mange tok vi bare utgangspunkt i prosjektgruppen.
 
 
 \subsection{Løsningsimplementering}
-
 \subsubsection{Kraftfeltsanalyse}
 
 \paragraph{Valg og ønsket utbytte av verktøy}
-
-
-\paragraph{Spesifiseringer}
-
-
-\paragraph{Gjennomføring}
-
-
-
-\subsubsection{Trediagram}
-
-\paragraph{Valg og ønsket utbytte av verktøy}
-
+Ønsket utbytte fra kraftfeltsanalyse er å få vite hva som er for og hva som er imot implementering av tiltakene. Dette verktøyet gir en plan over hvilke tiltak som er lettest å gjennomføre.
 
 \paragraph{Spesifiseringer}
 
 
 \paragraph{Gjennomføring}
+Kraftfeltsanalysen ble gjort ved at vi tok tiltakene fra problemelimineringen og hadde en idémyldring for å se hva som talte for tiltakene og hva som var imot. 
 

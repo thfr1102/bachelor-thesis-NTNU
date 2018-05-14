@@ -5,7 +5,7 @@ Arbeidet i denne fasen går ut på å identifisere rotårsaken. I foregående fa
 5 Whys er et verktøy som prøver å gjøre et dypdykk i årsakene for å finne rotårsaken. Måten dette gjøres på er å hele tiden spørre ``Why?'', altså hvorfor på norsk, hver gang en ny årsak dukker opp. Det brukes ofte for å sjekke om de identifiserte årsakene er symptomer, lav-nivå årsaker eller rotårsaker. 
 
 \subsection{Ønsket utbytte}
-Ved å bruke 5 Whys prøver vi å finne ut hva som er rotårsaken til problemet.
+Ved å bruke 5 Whys ønsker  vi å finne ut hva som er rotårsaken til problemet. Målet her er å få frem så mange rotårsaker som mulig, som vi kan bruke på rotårsakselimineringen. 
 
 \subsection{Gjennomføring}
 Med dette verktøyet tar vi utgangspunkt i casebeskrivelsen; nemlig rotårsaken til kryptoutvinning på NTNU. Ut fra dette brukte vi funnene fra analysen for å komme på årsaker, samt prøvde å idémyldre et par nye. For hver av disse årsakene ble det spurt: ``Hvorfor er dette en årsak av det originale problemet?''. For hvert svar spør vi hvorfor igjen og igjen helt til vi finner rotårsaken. Det ble tatt utgangspunkt i fem iterasjoner, men det er mulighet for flere eller færre avhengig av om spørsmålet kan besvares på en fornuftig måte. 
@@ -81,11 +81,14 @@ Det å utvinne krypto på universitetet sine ressurser er alt fra å kjøre en k
     \caption[5 Whys: Minere som er implementert inn i nettsider]{5 Whys på ansatte og studenter utvinner krypto med skolens}
     \label{5Whys-minere}
 \end{table}
-Årsaken til at nettsider som har muligheten til å utvinne kryptovaluta er et problem er fordi, de starter å bli utbredt og de spør ofte ikke om godkjenning for utvinning på PCene til folk.
+Utvinning v
+
+Utvinning på nettsider blir mer utbredt fordi det er profitabelt og en god erstatning til reklame. Dette kan bli stoppet med annonseblokkering eller blokkering av DNS adresser. Dette blir ikke gjort fordi det ikke er en prioritet fra seksjon for digital sikkerhet.
+
+%Årsaken til at nettsider som har muligheten til å utvinne kryptovaluta er et problem fordi, de starter å bli utbredt og de spør ofte ikke om godkjenning for utvinning på PCer.
 
 \subsection{Konklusjon av verktøy}
-Verktøyet var svært nyttig for å gå dypt inn i årsakene. Et problem består ofte av flere nivåer av årsaker, og det tar 5 Whys hensyn til. I forhold til informasjonssikkerhet burde man passe på å ikke alltid ende opp med en årsak som er relatert til IT-reglement, da problemet ofte også kan være av teknisk art. Dette var en mulig fallgruve for oss, men det er usikkert om det bare gjelder dette caset. Et annet problem med verktøyet er at det kan bli for ensporet på en spesifikk tankegang. Det kan derfor anbefales i noen tilfeller å undersøke samme årsaken flere ganger dersom det er grunn til å tro at det finnes flere relevante 
-årsaker ved ett av spørsmålene, som fører til en annen rotårsak.
+Verktøyet var svært nyttig for å gå dypt inn i årsakene. Et problem består ofte av flere nivåer av årsaker, og det tar 5 Whys hensyn til. I forhold til informasjonssikkerhet burde man passe på å ikke alltid ende opp med en årsak som er relatert til IT-reglement, da problemet ofte også kan være av teknisk art. Et problem med verktøyet er at det kan bli for ensporet på en spesifikk tankegang. Det kan derfor anbefales i noen tilfeller å undersøke samme årsaken flere ganger dersom det er grunn til å tro at det finnes flere relevante årsaker ved ett av spørsmålene, som fører til en annen rotårsak.
 
 \section{Feiltreanalyse}
 Feiltreanalyse tar alle mulige årsaker i et diagram og identifiserer mulige linker. Analysen bygger på hva som ble gjort i 5 Whys. 
@@ -108,4 +111,4 @@ I figur \ref{fig:feil_tre_analyse} representerer trekanter ``eller'', halvsirkel
 \end{figure}
 
 \subsection{Konklusjon av verktøy}
-Verktøyet funger godt til å se hvordan de forskjellige årsakene er koblet sammen og hva som er hovedårsakene. Der man ser hvordan interne og eksterne er koblet sammen og hvordan de er forskjellige. 
+Verktøyet funger godt til å se hvordan de forskjellige årsakene er koblet sammen og hva som er hovedårsakene.
