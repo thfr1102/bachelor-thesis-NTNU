@@ -39,19 +39,25 @@ Etter at idémyldringsøkten var ferdig ble det gjort en vurdering av hvilke mom
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.5]{case_3/bilder/idemyldring-hvordan.pdf}
+    \includegraphics[scale=0.6]{case_3/bilder/idemyldring-hvordan.pdf}
     \caption[Idémyldring]{Resultater og gruppering av Hvordan}
      \label{fig:idemyldring-hvordan}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.5]{case_3/bilder/idemyldring-hvorfor.pdf}
+    \includegraphics[scale=0.6]{case_3/bilder/idemyldring-hvorfor.pdf}
     \caption[Idémyldring]{Resultater og gruppering av Hvorfor}
     \label{fig:idemyldring-hvorfor}
 \end{figure}
 
-RESULTAT
+Resultatene er gruppert inn i 4 hovedkategorier:
+\begin{description}
+    \item [Ondsinnet programmvare] Er i stor grad trojanere i form av javascript.
+    \item [Utilstrekkelig tilgangskontroll] Tilganskontroll på diverese datamaskiner rundt på campus, som kan utnyttes.
+    \item [Økonomi] Er i stor grad motivasjonen til aktørene, der det er stor økonomisk vinning med kryptovaluta.
+    \item[Ingen konsekvens om man blir tatt] Det står lite i IT-reglementet om at krypto utvinning ikke er lov.
+\end{description}
 
 \subsection{NGT}
 Etter at hvert gruppemedlem hadde gitt ut sine 15 poeng satt vi igjen med 4 idéer som stakk seg ut med hvor mange poeng de fikk. Disse vises i fet skrift i tabell \ref{tab:NGT}. 
@@ -94,9 +100,9 @@ Etter at hvert gruppemedlem hadde gitt ut sine 15 poeng satt vi igjen med 4 idé
 
 Disse fire årsakene er de vi kommer til å fokusere på i dette caset. De fire fokuspunktene kan deles etter de to problemstillingene ``hvordan og hvorfor''.
 
-De to årsakene knyttet til ``hvorfor problemstillingen'' går ut på at det ikke er ulovlig med kryptoutvinning i henhold til gjeldende regelverk. De faller derfor i en gråsone der en ikke får noen represalier for å holde på med kryptoutvinning, annet enn å bli kastet av nettet. Konsekvensen kommer av at man ressurser utstyr til egen vinning.
+De to årsakene knyttet til ``hvorfor'' går ut på at det ikke er ulovlig med kryptoutvinning i henhold til gjeldende regelverk \cite{ITReg}. De faller derfor i en gråsone der en ikke får noen represalier for å holde på med kryptoutvinning, annet enn å bli kastet av nettet. Konsekvensene får man hvis en utnytter NTNU sine ressurser til egen vinning.
 
-De neste årsakene går ut på hvilke aktører som bruker universitetet sine ressurser til utvinning av kryptovaluta, og hvordan de bruker ressursene. Internt misbruk av labutstyr går ut på at studenter eller ansatte har tilgang til diverse labber og PCer som kan brukes til utvinning av kryptovaluta. Både ondsinnet programvare som utvinner kryptovaluta og kryptoutvinnere integrert i nettleser gjøres av eksterne aktører. Pengene som tjenes her går som regel tilbake til diverse kriminelle nettverk. Utvinning av kryptovaluta har blitt mer utbredt som et alternativ til løsepengevirus, der løsepengevirus har blitt mindre lønnsomt den siste tiden \cite{RW}.
+De neste årsakene går ut på hvilke aktører som bruker universitetet sine ressurser til utvinning av kryptovaluta, og hvordan de bruker ressursene. Internt misbruk av labutstyr går ut på at studenter eller ansatte har tilgang til diverse labber og PCer som kan brukes til utvinning av kryptovaluta. Både ondsinnet programvare som utvinner kryptovaluta og kryptoutvinnere integrert i nettleser brukes av eksterne trusselaktører. Pengene som tjenes her går til kriminelle. Utvinning av kryptovaluta har blitt mer utbredt som et alternativ til løsepengevirus, der løsepengevirus har blitt mindre lønnsomt den siste tiden \cite{RW}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Datainnsamling}
@@ -116,49 +122,49 @@ Vi hadde noen hypoteser når vi utformet intervjuspørsmålene, disse var:
     \centering
     \begin{tabular}{|m{30em}|} 
         \hline
-             \cellcolor{yellow} Spørsmål  \\
+        \cellcolor{yellow} Spørsmål  \\
         \hline
-          Hva er de typiske angrepsvektorene?  \\
-         \hline
-         Tar det lang tid å oppdage trojanere i nettverket? \\ 
-         \hline
-         Hva gjør Seksjon for Digital Sikkerhet når de oppdager trojanere? \\
-         \hline
-         Hvordan fant dere ut om HPC clusterne blir misbrukt? \\
-         \hline
-         Hvordan fant dere ut at det var internt misbruk?\\
-         \hline
-         Har dere andre tiltak enn å stenge internett til de som miner? \\
-         \hline
-         hva er grunnen til at dere ikke har implementert noe slike tiltak? \\
-         \hline
-         Hva tror du er oppfatningen blant dine kolleger er angående utvinning. Vet folk det er ulovlig eller har de ikke tenkt så mye over det og utvinner fordi det er en trend? \\
-         \hline
-         Hva er måten dere for du snakket tidligere om at dere så mange av de lommebøkene som ble brukt var fra mørke siden av nettet?  \\
-         \hline
-         Hvordan ser dere at de går til disse lommebøkene? \\
-         \hline
-          Hvordan skal dere implementere kryptoutvinning i neste IT-reglement? \\
-          \hline
-          Tenker folk over at det ikke er lov til å utvinne krypto i henhold til IT-reglementet? \\
-          \hline
-          Har dere noen tiltak på utvinning på nettsider? \\
-          \hline
-          Er det like stor økning nå som det var før jul? \\
-          \hline
-          Økningen er det gjort av de profesjonelle aktørene eller er det folk som setter frivillig opp utvinnere? \\
-          \hline
-          Dere hadde ikke sett noe tilfeller av bruteforcede PCer og servere som ble installert kryptominere på, etter at de ble bruteforcet?  \\
-          \hline
-          Er det noen regler på hva ansatte får lov til å legge på serverne? \\
-          \hline
-          Har dere noen tilfeller av PCer på datalabber der studenter har installert kryptoutvinning?
-          \hline
+        Hva er de typiske angrepsvektorene?  \\
+        \hline
+        Tar det lang tid å oppdage trojanere i nettverket? \\ 
+        \hline
+        Hva gjør Seksjon for Digital Sikkerhet når de oppdager trojanere? \\
+        \hline
+        Hvordan fant dere ut om HPC clusterne blir misbrukt? \\
+        \hline
+        Hvordan fant dere ut at det var internt misbruk?\\
+        \hline
+        Har dere andre tiltak enn å stenge internett til de som miner? \\
+        \hline
+        hva er grunnen til at dere ikke har implementert noe slike tiltak? \\
+        \hline
+        Hva tror du er oppfatningen blant dine kolleger er angående utvinning. Vet folk det er ulovlig eller har de ikke tenkt så mye over det og utvinner fordi det er en trend? \\
+        \hline
+        Hva er måten dere for du snakket tidligere om at dere så mange av de lommebøkene som ble brukt var fra mørke siden av nettet?  \\
+        \hline
+        Hvordan ser dere at de går til disse lommebøkene? \\
+        \hline
+        Hvordan skal dere implementere kryptoutvinning i neste IT-reglement? \\
+        \hline
+        Tenker folk over at det ikke er lov til å utvinne krypto i henhold til IT-reglementet? \\
+        \hline
+        Har dere noen tiltak på utvinning på nettsider? \\
+        \hline
+        Er det like stor økning nå som det var før jul? \\
+        \hline
+        Økningen er det gjort av de profesjonelle aktørene eller er det folk som setter frivillig opp utvinnere? \\
+        \hline
+        Dere hadde ikke sett noe tilfeller av bruteforcede PCer og servere som ble installert kryptominere på, etter at de ble bruteforcet?  \\
+        \hline
+        Er det noen regler på hva ansatte får lov til å legge på serverne? \\
+        \hline
+        Har dere noen tilfeller av PCer på datalabber der studenter har installert kryptoutvinning? \\
+        \hline
     \end{tabular}
     \caption{Spørsmål til intervju case 3}
     \label{tab:spm-intervju}
 \end{table}
-Under intervjuet ble det tatt lydopptak, slik at vi lett kunne gå tilbake til svarene for å få det mest mulig nøyaktig til neste fase. Når intervjuet var ferdig ble det transkribert.
+Under intervjuet ble det tatt lydopptak, slik at vi lett kunne gå tilbake til svarene for å få det mest mulig nøyaktig til neste fase. Når intervjuet var ferdig ble det transkribert. Transkripsjonen finnes i vedlegg \ref{transkripsjon}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dataanalyse}
 \subsection{Affinitetsdiagram}
@@ -173,9 +179,11 @@ Analysen ble gjennomført med å ta transkripsjon av intervjuet og stykke den op
     \caption{Hvordan fungerer utvinning av kryptovaluta ved NTNU?}
 \end{figure}
 
-Vi finner mulige årsaker og tiltak som er satt på plass, og forhåpentligvis er rotårsaken blant dem.
+Affinitetsdiagrammet deles inn i hovedkategoriene: angrepsvektor, holdninger, ressurser som kan misbrukes, tiltak og andre. Blant disse er mulige årsaker til problemet og anbefalte tiltak som kan løse det. 
 
-RESULTAT
+
+
+%RESULTAT for affinitetsdiagram.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Rotårsaksidentifisering}
@@ -217,7 +225,7 @@ Det å utvinne krypto på universitetet sine ressurser er alt fra å kjøre en k
         \hline
             Why? & Folk går inn på waterholes og trykker på phishingmail               \\
         \hline
-            Why? & Brukeren var ikke oppmerksom nok på e-mailen eller siden de gikk på           \\
+            Why? & Brukeren var ikke oppmerksom nok på e-post eller siden de gikk på           \\
         \hline
             Why? & Brukere har ikke fått nok opplæring i hvordan dette unngås    \\
         \hline
@@ -226,7 +234,7 @@ Det å utvinne krypto på universitetet sine ressurser er alt fra å kjøre en k
     \label{5Whys-eksterne}
 \end{table}
 
-Årsaken til at eksterne trusselaktører utvinner kryptovaluta med skolen sine ressurser er fordi det er en lønnsom affære som er koster lite å distribuere og som det er liten sannsynlighet for å bli tatt for. Med eksterne trusselaktører mener vi folk som utvinner på andre sine datamaskiner gjennom å få skadevare installert på disse.
+Årsaken til at eksterne trusselaktører utvinner kryptovaluta med universitetet sine ressurser er fordi det er en lønnsom affære som koster lite å distribuere og som det er liten sannsynlighet å bli tatt for. Dette virker i kombinasjon med at brukere ikke er oppmerksom på hva de trykker på. Rotårsaken til at de ikke er oppmerksomme er at de ikke har fått nok opplæring.
 
 \begin{table} [H]
     \centering
@@ -251,20 +259,21 @@ Det å utvinne krypto på universitetet sine ressurser er alt fra å kjøre en k
     \label{5Whys-minere}
 \end{table}
 
-LEGG INN SISTE TEKST TIL 5 WHYS
+Utvinning på nettsider blir mer utbredt fordi det er profitabelt og en god erstatning til reklame. Dette kan bli stoppet med annonseblokkering eller blokkering av DNS adresser. Dette blir ikke gjort fordi det ikke er en prioritet fra seksjon for digital sikkerhet.
 
 \subsection{Feiltreanalyse}
 Feiltreanalyse tar for seg alle mulige årsaker i et diagram og identifiserer mulige relasjoner. Analysen bygger på hva som ble gjort i 5 Whys.
 
 Vi har kommet fram til fire hovedgrunner til at kryptoutvinning på NTNU forekommer. Rotårsaken er sammensatt av årsakene definert i figur \ref{fig:feil_tre_analyse}. I dette caset er problemet delt inn i to deler: de interne og de eksterne. Det er to forskjellige typer årsaker, der interne går mer på regelverk og eksterne er mer teknisk. 
 
-I figur \ref{fig:feil_tre_analyse} representerer trekanter ``eller'' og halvsirkelen ``og''. De røde boksene er de årsakene vi ikke kan gjøre noe med, mens de grønne kan det gjøres noe med.
  \begin{figure}[H]
     \centering
     \includegraphics[scale=0.45]{case_3/bilder/feil_tre_analyse.pdf}
     \caption{Feiltreanalyse}
     \label{fig:feil_tre_analyse}
 \end{figure}
+
+I figur \ref{fig:feil_tre_analyse} over representerer trekanter ``eller'' og halvsirkelen ``og''. De røde boksene er de årsakene vi ikke kan gjøre noe med, mens de grønne kan det gjøres noe med.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Rotårsakseliminering}
 \subsection{SIT}
@@ -371,8 +380,8 @@ Når komponentene er gjort rede for, vil de fem SIT prinsippene brukes sekvensie
 Vi sorterer og beskriver de mest relevante idéer til videre utdyping:
 
 \begin{description}
-\item[Gjennomføre en informasjonskampanje om kommersielt misbruk av NTNU sin infrastruktur] Kampanjen skal få frem at det å bruke NTNU sine ressurser til kommersiell virksomhet bryter IT-reglementet, og at strøm inngår i NTNU sine ressurser.
-\item[Legge til et større fokus på utvinning av krypto i IT-reglementet] Gi IT-reglement et større fokus på kryptoutvinning og gi klarere retningslinjer på hva som ikke er greit å gjøre.
+\item[Gjennomføre en informasjonskampanje om kommersielt misbruk av NTNU sin infrastruktur] Kampanjen skal få frem at det å bruke NTNU sine ressurser til kommersiell virksomhet bryter IT-reglementet. I NTNU sine ressurser inkluderer strøm og internett. %(y)
+\item[Legge til et større fokus på utvinning av krypto i IT-reglementet] Gi IT-reglement et større fokus på kryptoutvinning og gi klarere retningslinjer på hva som ikke er akseptabelt.
 \item[Legge til annonseblokker som stopper utvinning] Aktivere blokkering av utvinningsprotokoll på annonseblokkere og passe på at alle har en annonseblokkeringstjeneste installert.
 \item[Blokkere kryptoutvinning] Med dette mener vi å gjøre et eller flere tiltak som å blokkere DNS-forespørsler som omhandler kryptoutvinning.  
 \item[Øke antall personell i SOC] SOC har mange oppgaver som er mer kritiske enn kryptoutvinning. Derfor foreslår vi å ansette flere, kanskje i kombinasjon med bacheloroppgaver.
@@ -389,13 +398,13 @@ Under beskrives de ulike tiltakene:
     \item[Gjennomføre en informasjonskampanje om kommersielt misbruk av NTNU sin infrastruktur] Utvinning av kryptovaluta er en ny ting, hvor mange ikke er klar over hvordan universitetet sitt regelverk håndterer temaet. Vår anbefaling er å ha en kampanje der universitet informerer om hva som regnes som NTNU sine ressuser og hvordan disse ikke skal brukes til kommersiell virksomhet.
     \item[Legge til et større fokus på utvinning av krypto i IT-reglementet] Endre IT-reglementet slik at det blir tydelig at kryptoutvinning ikke er lovlig bruk av NTNU sine ressurser. 
     \item[Blokkere kryptoutvinning] Dette tiltaket går ut på å blokkere DNS-forespørsler tilknyttet kryptoutvinning. Slik at PCer som blir brukt i utvinning ikke kan hente nye oppgaver å løse. De velkjente DNS-ene blokkeres. Videre kan loggen bli benyttet for å legge nye domener inn i en svarteliste, eller justere de gamle DNS-ene.
-    \item[Øke antall personell i SOC] SOCen kan ikke prioritere å stoppe utvinning av kryptovaluta. Derfor anbefaler vi å enten øke mengden personell i SOCen, eller gi utvikling av implementasjonsstrategi som en bachelor oppgave.
+    \item[Øke antall personell i SOC] SOCen kan ikke prioritere å stoppe utvinning av kryptovaluta. Derfor anbefaler vi å enten øke mengden personell i SOCen, eller gi utvikling av et teknisk forslag til implementasjon som en bacheloroppgave.
 \end{description}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Løsningsimplementering}
 \subsection{Kraftfeltsanalyse} 
-Kraftfeltsanalyse blir brukt for å få vite hvilke styrker for og hvilke styrker mot implementering av tiltakene. Dette verktøyet gir en plan over hvilke tiltak som er lettest å gjennomføre.  
+Kraftfeltsanalyse blir brukt for å få en oversikt over hvilke styrker som er for og hvilke styrker som er mot implementering av tiltakene. Dette verktøyet gir en plan over hvilke tiltak som er lettest å gjennomføre.  
 
 Informasjonskampanjen og endringen i IT-reglementet bør gjøre i kombinasjon med hverandre. Der IT-reglementet får klartgjort at selv om kryptoutvinning ikke ulovlig i henhold til norsk lov, er det imot NTNU sitt IT-reglement så fremt det ikke er søkt om. Når endringen er gjort, gjennomføres informasjonskampanjen.   
 Under, i tabell \ref{fig:kampanje} og \ref{fig:IT-reglement}, viser resultatene fra kraftfeltsanalysen på informasjonskampanje og endring i IT-reglementet.
@@ -414,7 +423,7 @@ Under, i tabell \ref{fig:kampanje} og \ref{fig:IT-reglement}, viser resultatene 
     \label{fig:IT-reglement}
 \end{figure}
 
-Fra dataanalysen kom fram til at selv om det finnes tekniske løsninger, har ikke SOCen hatt mulighet til å implementere DNS blokkering på bakgrunn av mangel på ressurser. Figur \ref{fig:Blokkering} og \ref{fig:Oke-antall} viser hva som skal til for å blokkere DNS og hva som må til for å øke ressursene til SOCen.    
+Fra dataanalysen kom vi frem til at selv om det finnes tekniske løsninger, har ikke SOCen hatt mulighet til å implementere DNS blokkering på bakgrunn av mangel på ressurser. Figur \ref{fig:Blokkering} og \ref{fig:Oke-antall} viser hva som skal til for å blokkere DNS og hva som må til for å øke ressursene til SOCen. Vi estimerer at den største kraften mot implementering av dette kommer til å være tidsbruk og kostnadene rundt tidsbruk.    
  \begin{figure}[H]
     \centering
     \includegraphics[scale=0.6]{case_3/bilder/Force-Field3.pdf}
@@ -422,6 +431,8 @@ Fra dataanalysen kom fram til at selv om det finnes tekniske løsninger, har ikk
     \label{fig:Blokkering}
 \end{figure}
 
+
+Ved å øke antall ansatte i SOCen estimerer vi at kosten av en ny ansatt vil være største kraften mot. Det er vanskelig å si om vedkommende vil ha nok arbeidsoppgaver til at det er verdt ansettelsen. Det bør vurderes å gi prosjekter til bachelor- og masterstudenter. 
  \begin{figure}[H]
     \hspace{3.6cm}
     \includegraphics[scale=0.6]{case_3/bilder/Force-field4.pdf}
@@ -429,9 +440,10 @@ Fra dataanalysen kom fram til at selv om det finnes tekniske løsninger, har ikk
     \label{fig:Oke-antall}
 \end{figure}
 
-Figurene viser våres antakelser på hvilke krefter som jobber for implementeringen og hvilke som jobber mot, samt estimater på styrken til kreftene, der lengden indikerer antatt styrke. 
+Figurene viser våres antakelser på hvilke krefter som jobber for implementeringen og hvilke som jobber mot, samt estimater på styrken til kreftene. Lengden på pilene indikerer antatt styrke. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Kostnad-nytte-analyse}
+\label{kost-nytte-case3}
 Denne seksjonen tar for seg en kostnad-nytte-analyse av nytteverdien til bruk av rotårsaksanalyse for case 3. 
 
 \subsection{Kostnad for gjennomføring}

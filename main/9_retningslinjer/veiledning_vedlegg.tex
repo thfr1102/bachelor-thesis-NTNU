@@ -1,16 +1,16 @@
-\chapter{Veiledning i bruk av rotårsaksanalyse innen informasjonssikkerhet}
+\chapter{Veileder i bruk av rotårsaksanalyse innen informasjonssikkerhet}
 \label{kap:veiledning-RCA}
 Veilederen er skrevet slik at de kan bli benyttet uten bacheloroppgaven. Derfor vil noe av det som er gjennomgått i bacheloroppgaven bli gjentatt.
 
 \section{Formål og bakgrunn}
-Formålet med dette dokumentet er å gi leseren en veileder for anvendelse av rotårsaksanalyse. Veilederen beskriver anvendelse av rotårsaksanalyseverktøyene beskrevet i boken ``Root Cause Analysis: Simplified Tools and Techniques - second edition'' av Bjørn Andersen og Tom Fagerhaug \cite{RCA}. Vi anbefaler denne boken som samlet metodikk. Boken beskriver godt hva som skal til for å komme frem til rotårsaken til et problem. 
+Formålet med dette dokumentet er å gi leseren en veileder for anvendelse av rotårsaksanalyse. Veilederen beskriver anvendelse av rotårsaksanalyseverktøyene beskrevet i boken ``Root Cause Analysis: Simplified Tools and Techniques - second edition'' av Bjørn Andersen og Tom Fagerhaug \cite{RCA} i forhold til informasjonssikkerhet. Vi anbefaler denne boken som samlet metodikk. Boken beskriver godt hva som skal til for å komme frem til rotårsaken til et problem. 
 
 Dette dokumentet ble skrevet i forbindelse med bacheloroppgave i informasjonssikkerhet der det ble gjennomført tre caser. Veilederene er derfor basert på funn fra disse casene, om hvordan metoden og verktøyene fungerte.
 
 Dette dokumentet vil ikke beskrive verktøyene, men valg av de. Beskrivelsen til verktøyene står i boken til Fagerhaug og Andersen \cite{RCA}.
 
 \section{Valg av verktøy}
-Boken beskriver 7 faser i rotårsaksanalyse. Disse må bli fulgt stegvis ettersom hver fase bygger på resultater fra foregående. Verktøyene beskrevet i boken til Fagerhaug og Andersen \cite{RCA} er generelle verktøy som er ofte brukt i rotårsaksanalyse. Vi har sett på et utvalg av disse verktøyene og hvordan disse fungerer innen informasjonssikkerhet. 
+Boken beskriver 7 faser i rotårsaksanalyse. Disse må bli fulgt stegvis ettersom hver fase bygger på resultater fra foregående. Verktøyene beskrevet i boken til Fagerhaug og Andersen \cite{RCA} er generelle verktøy som er ofte brukt i rotårsaksanalyse. Vi har sett på et utvalg av disse verktøyene og hvordan disse fungerer innen informasjonssikkerhet. Figur \ref{fig:prosess_veileder} under viser verktøyene i metodikken, og er fargekodet ut i fra hva vi anbefaler. 
 
 \begin{figure}[H]
     \centering
@@ -18,15 +18,17 @@ Boken beskriver 7 faser i rotårsaksanalyse. Disse må bli fulgt stegvis etterso
     \caption[RCA-prosess]{De syv fasene i rotårsaksanalyseprosessen}
     \label{fig:prosess_veileder}
 \end{figure}
+
 \subsection{Problemforståelse}
 Problemforståelse går ut på å få en solid forståelse for problemet en ønsker å løse. Det kan også hjelpe med å skape enighet i teamet rundt hva problemet egentlig omfatter. Det er også viktig for å passe på at ressursene som benyttes for analysen brukes effektivt videre. 
 Verktøyene vi anbefaler til denne fasen er: 
+
 \subsubsection{Kritiske hendelser} 
-Kritiske hendeleser er et godt verktøy å bruke når man har mye data, som kan gi et innblikk i hva som går galt. Etter vår erfaring kan man bruke logger til å finne de kritiske hendelsene, hvilket passer utmerket i informasjonssikkerhet perspektiv. Kritisk hendelse for informasjonssikkerhet anbefaler vi at en tenker på disse tingene: 
+Kritiske hendelser er et godt verktøy å bruke når man har mye data som kan gi et innblikk i hva som går galt. Etter vår erfaring kan man bruke logger til å finne de kritiske hendelsene, hvilket passer utmerket i et informasjonssikkerhetsperspektiv. For kritiske hendelser i informasjonssikkerhet anbefaler vi at det utføres slik: 
 \begin{description}
-    \item [Steg 1: Logg tilgjengelig] Her er det meste av nødvendig informasjon ofte logget. Her kan en bruke denne logg informasjonen til å finne kritiske hendelser.
-    \item [Steg 1: Informasjon ikke i logg] Om hendelsene ikke er logget, kan informasjon hentes fra personell som jobber med hendelsene.
-    \item [Steg 2:] Sorter og hendelsene etter hvor frekvente de er.
+    \item [Steg 1: Logg tilgjengelig] Bruk informasjon fra hendelseslogger til å finne informasjon om kritiske hendelser.
+    \item [Steg 1: Informasjon ikke i logg] Om hendelsene ikke er logget, kan informasjon hentes fra personell som jobber med hendelsene, eller samles inn selv.
+    \item [Steg 2:] Sorter hendelsene etter frekvens.
     \item [Steg 3:] Bruk de mest kritiske hendelsene som startpunkter for analysen.
 \end{description}
 
@@ -34,27 +36,29 @@ Kritiske hendeleser er et godt verktøy å bruke når man har mye data, som kan 
 \subsection{Idémyldring}
 Målet med idémyldring er å generere så mange idéer som mulig om et gitt emne. I rotårsaksanalyse er målet stort sett å generere en liste over problemområder som kan forbedres, identifisere mulige konsekvenser, generere en liste over mulige årsaker til problemet og oppmuntre til å tenke på løsninger som kan eliminere problemet. Verktøyene vi anbefaler til denne fasen er:
 
-\subsubsection{Idémyldring} Idémyldring gir mange idéer om mulige rotårsaker. Vi brukte idémyldring på våres tre caser og fant verktøyet til å fungere strålende. Skulle det være noen i gruppen som dominerer myldringen, anbefales idéskriving. Fungere på samme måte som idémyldring, men istedenfor å si idéene blir de skrevet ned og samlet inn før de skrives på tavlen.
+\subsubsection{Idémyldring} Idémyldring gir mange idéer om mulige rotårsaker. Vi brukte idémyldring på våres tre caser og fant verktøyet til å fungere strålende. Skulle det være noen i gruppen som dominerer myldringen, anbefales heller idéskriving. Dette verktøyet fungerer på samme måte som idémyldring, men istedenfor å si idéene høyt, blir de skrevet ned og samlet inn før de skrives på tavlen. 
 
 \begin{description}
-    \item[Steg 1:] Skrive opp problemstillingen hentet fra problemforståelsen på ei tavle og ha personene i gruppen komme med idéer, husk på å ikke kritisere idéene til hverandre. Prosessen burde la seg dabbe av en gang for å sørge for at alle idéer er nevnt. 
-    \item[Steg 2:] Er å få sortert alle idéene grupper og gå videre med de mest lovende idéene.
+    \item[Steg 1:] Skriv opp problemstillingen en ønsker å ta utgangspunkt i på en tavle og la personene i gruppen komme med idéer. Husk på å ikke kritisere idéene til hverandre. Prosessen burde la seg dø ut en gang for å sørge for at alle idéer er nevnt. 
+    \item[Steg 2:] Sorter alle idéene i grupper og gå videre med de mest lovende idéene.
 \end{description}
 
-\subsubsection{Nominell gruppe teknikk} Dette verktøyet gir en liste over hva en burde prioritere mest i datainnsamling for å gi ett godt datagrunnlag for å finne rotårsaken. Vi anbefaler å bruke dette verktøy som et supplement, skulle man ha mange idéer fra idémyldringen og trenger å få de strukturert etter prioritering.
+\subsubsection{Nominell gruppe teknikk} 
+Dette verktøyet gir en liste over hva en burde prioritere mest i datainnsamling for å gi ett mer målrettet datagrunnlag for å finne rotårsaken. Vi anbefaler å bruke dette verktøy som et supplement, skulle man ha mange idéer fra idémyldringen og trenger å prioritere.
 \begin{description}
-    \item[Steg 1:] Gi idéene fra idémyldringen bokstaver
-    \item[Steg 2:] Alle gruppemedlemene skal få hvert sitt stemme ark, med alle bokstavene på, her skal gruppemedlemene rangere 5 idéer fra 1-5 der 5 er høyest.
-    \item[Steg 3:] Poengsummene telles opp og de Idéene med mest poeng prioriteres videre i prosesse
+    \item[Steg 1:] Gi hver idé fra idémyldringen hver sin bokstav.
+    \item[Steg 2:] Gi alle gruppemedlemene hvert sitt stemmeark, med alle bokstavene på. 
+    \item[Steg 3:] Gi fem idéer et tallpoeng fra 1-5 der 5 selvfølgelig er høyest.
+    \item[Steg 4:] Tell opp poengsummene. De idéene med flest poeng prioriteres videre i prosessen.
 \end{description}
 
 
 \subsection{Datainnsamling}
-Datainnsamling er et steg i prosessen der man skal være strukturert og samle inn så mye relevant informasjon om problemstillingen som mulig. En god datainnsamling gir er sentralt for gode resultater i senere faser.
+Datainnsamling er et steg i prosessen der man skal være strukturert og samle inn så mye relevant informasjon om problemstillingen som mulig. En god datainnsamling er sentralt for gode resultater i senere faser. Vi anbefaler følgende verktøy:
 
 \begin{description}
-    \item[Sampling] Sampling er et godt verktøy for å begrense datainnsamling til de relevante gruppene. 
-    \item[Spørreundersøkelser] Spørreundersøkelser er et godt verktøy for å få data fra de berørte personene. 
+    \item[Sampling] Sampling er et godt verktøy for å begrense datainnsamling til en utvalgt del av en større gruppe. Brukes ofte i kombinasjon ble spørreundersøkelser eller sjekklister.
+    \item[Spørreundersøkelser] Spørreundersøkelser er et godt verktøy for å få data fra de berørte personene.
 \end{description}
 
 \subsection{Dataanalyse}
