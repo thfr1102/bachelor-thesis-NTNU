@@ -32,14 +32,14 @@ Kritiske hendelser er et godt verktøy å bruke når man har mye data som kan gi
     \item [Steg 3:] Bruk de mest kritiske hendelsene som startpunkter for analysen.
 \end{description}
 
-
+%
 \subsection{Idémyldring}
 Målet med idémyldring er å generere så mange idéer som mulig om et gitt emne. I rotårsaksanalyse er målet stort sett å generere en liste over problemområder som kan forbedres, identifisere mulige konsekvenser, generere en liste over mulige årsaker til problemet og oppmuntre til å tenke på løsninger som kan eliminere problemet. Verktøyene vi anbefaler til denne fasen er:
 
 \subsubsection{Idémyldring} Idémyldring gir mange idéer om mulige rotårsaker. Vi brukte idémyldring på våres tre caser og fant verktøyet til å fungere strålende. Skulle det være noen i gruppen som dominerer myldringen, anbefales heller idéskriving. Dette verktøyet fungerer på samme måte som idémyldring, men istedenfor å si idéene høyt, blir de skrevet ned og samlet inn før de skrives på tavlen. 
 
 \begin{description}
-    \item[Steg 1:] Skriv opp problemstillingen en ønsker å ta utgangspunkt i på en tavle og la personene i gruppen komme med idéer. Husk på å ikke kritisere idéene til hverandre. Prosessen burde la seg dø ut en gang for å sørge for at alle idéer er nevnt. 
+    \item[Steg 1:] Skriv opp problemstillingen en ønsker å ta utgangspunkt i på en tavle og la personene i gruppen komme med idéer. Husk på å ikke kritisere idéene til hverandre. Prosessen burde la seg dø ut en gang før man tar en runde til, for å sørge for at alle idéer er nevnt. 
     \item[Steg 2:] Sorter alle idéene i grupper og gå videre med de mest lovende idéene.
 \end{description}
 
@@ -62,8 +62,8 @@ Datainnsamling er et steg i prosessen der man skal være strukturert og samle in
 \end{description}
 
 \subsection{Dataanalyse}
-I denne fasen blir dataene analysert og visualisert. Hovedmålet er å avklare mulige rotårsaker som har innvirkning på problemet, og hvilke av de som har størst innflytelse. Under beskrives de ulike verktøyene som ble brukt for å analysere dataene. Verktøyene vi anbefaler til denne fasen er:
-Når det gjelder histogram og statisk analyse vil vi ikke skrive noe om stegene som må tas, da det kommer an på hva programvare som brukes.
+I denne fasen blir dataene analysert og visualisert. Hovedmålet er å avklare mulige rotårsaker som har innvirkning på problemet, og hvilke av de som har størst innflytelse. Under beskrives de ulike verktøyene som ble brukt for å analysere dataene.
+Når det gjelder histogram vil vi ikke skrive noe om stegene som må tas, da det kommer an på hva programvare som brukes. Verktøyene vi anbefaler til denne fasen er:
 
 \begin{description}
     \item[Histogram] Histogram fungerer veldig godt for å skape en visuell forståelse av dataene, som kan gjøre det lettere å se korrelasjoner mellom variabler. Det gir også en tilfredstillende fremstilling av dataen. 
@@ -72,18 +72,18 @@ Når det gjelder histogram og statisk analyse vil vi ikke skrive noe om stegene 
 \subsubsection{Statistisk analyse}
 Statistisk analyse er ikke i boken, men er en analyse metode som fungerer veldig godt for å se korrelasjoner. Dette fungerer også ved å se på signifikansen.
 \begin{description}
-    \item[Steg 1:] Alle svar til nummeric form
-    \item[Steg 2:] Gjennomfør korrelasjon på svarene
-    \item[Steg 3:] De som korrelerer, gjennomfør en One-Way ANOVA eller en uavhengig t-test avhengig om det er 2 eller flere grupper.
-    \item[Steg 4:] Gjennomfør Histogram på de som har signifikans for å visualisere korelasjonen.
+    \item[Steg 1:] Gjør om alle svar til numerisk form
+    \item[Steg 2:] Gjennomfør en bivariate korrelasjon på alle svarene
+    \item[Steg 3:] På de som korrelerer, gjennomfør en One-Way ANOVA eller en uavhengig t-test avhengig om det er 2 eller flere grupper i den uavhengige variabelen.
+    \item[Steg 4:] Lag gjerne et histogram på de som har signifikans for å visualisere korrelasjonen.
 \end{description}
 
-\subsubsection{Affinitetsdiagram} Affinitetsdiagram passer veldig godt med spørreundersøkelser, der det er kortsvar- eller langsvaroppgaver. Den gir mulighet for å gruppere svarene etter innhold i svarene. 
+\subsubsection{Affinitetsdiagram} Affinitetsdiagram passer veldig godt med spørreundersøkelser, der det er kortsvar- eller langsvaroppgaver. Den gir mulighet for å gruppere etter innhold i svarene. 
 \begin{description}
-    \item[Steg 1:] Bruk data fra forrige fase til å komme fram til mulige årsaker.
-    \item[Steg 2:] Skriv årsakene på post-it lapp.
-    \item[Steg 3:] Grupper årsakene. Ofte må årsakene flyttes flere ganger før gruppene blir funnet. Bør ikke overstige 5-10 grupper 
-    \item[Steg 4:] Lag tittel på gruppene
+    \item[Steg 1:] Bruk data fra forrige fase til å komme fram til overordnede svar.
+    \item[Steg 2:] Skriv svarene på post-it lapper.
+    \item[Steg 3:] Grupper svarene. Ofte må lappene flyttes flere ganger før gruppene blir funnet. Det bør ikke overstige 5-10 grupper 
+    \item[Steg 4:] Lag tittel på gruppene og lag grafikk. 
 \end{description}
 
 \subsection{Rotårsaksidentifisering}
@@ -91,64 +91,79 @@ De foregående fasene skal ha generert en liste over mulige rotårsaker og måle
 
 Verktøyene vi anbefaler til denne fasen er:
 
-    \subsubsection{Årsak-virkning diagram} Som årsak-virkning anbefaler vi å benytte fiskebeindiagram. Ved å bruke fiskebeindiagram får en en visuell fremstilling av rotårsaken til problemet.
+\subsubsection{Årsak-virkning diagram} Som årsak-virkning anbefaler vi å benytte fiskebeindiagram. Ved å bruke fiskebeindiagram får en en visuell fremstilling av rotårsaken til problemet.
     \begin{description}
-        \item[Steg 1:] Tydelig definer hva problemstilingen er.
-        \item[Steg 2:] Bruke Draw.io eller et annet tegneprogram til tegne fiskebeindiagramet.
-        \item[Steg 3:] Identifisert hovedårsakene for problemstilingen og tegn de opp som greiner.
-        \item[Steg 4:] Idémyldre alle årsak som kan knyttes til hovedårsakene.
-        \item[Steg 5:] analyser årsak for å identifisere det som mest sannsynlig er rotårsaken
+        \item[Steg 1:] Definer tydelig hva problemstilingen er.
+        \item[Steg 2:] Bruke Draw.io eller et annet tegneprogram til tegne fiskebeindiagramet. Kan også bruke penn og papir. 
+        \item[Steg 3:] Identifiser hovedkategoriene for årsakene og tegn de opp som greiner.
+        \item[Steg 4:] Idémyldre alle årsaker som kan knyttes til hovedkategoriene.
+        \item[Steg 5:] Analyser årsakene for å identifisere det som mest sannsynlig er rotårsaken
     \end{description}
     
-\subsubsection{5 Whys} Hvis det er mistanke om høyere årsaker bak de identifiserte årsakene kan 5 whys gi en bekreftelse på om årsakene identifisert er faktisk rotårsak og ikke lav-nivå årsaker. Det kan kreve flere iterasjoner for å finne rotårsaken(e).  
+\subsubsection{5 Whys} 
+Hvis det er mistanke om høyere nivå av årsaker bak de identifiserte årsakene kan 5 Whys gi en bekreftelse på om årsakene som er identifisert er faktisk rotårsaken og ikke lav-nivå årsaker. Det kan kreve flere iterasjoner for å finne rotårsaken(e).  
+    \begin{description}
+        \item[Steg 1:] Identifiser årsakene du ønsker å undersøke
+        \item[Steg 2:] Spør hvorfor til hver årsak, og spør igjen for hver nye årsak som du kommer med.
+        \item[Steg 3:] Hvis det ikke er noen annen forklaring på årsaken enn Gud, da har du funnet rotårsaken.
+    \end{description}
+Det kan ta både mindre eller mer enn fem ``hvorfor'' for å komme til rotårsaken, men det er en tommelfingerregel å utføre fem iterasjoner. 
     
-\subsubsection{Feiltreanalyse} Brukes etter en 5 whys, for å få en visuell presentasjon på hvordan de forskjellige rotårsakene man kom frem til i 5 whys henger sammen.
+\subsubsection{Feiltreanalyse} 
+Kan brukes etter 5 Whys for å få en visuell presentasjon på hvordan de forskjellige rotårsakene man kom frem til i 5 Whys henger sammen.
 
 
 \subsection{Rotårsakseliminering}
-Denne fasen innebærer å komme med mulige løsninger til problemet for å eliminere rotårsaken. Boken til Fagerhaug og Andersen \cite{RCA} beskriver to mulige tilnærminger til denne fasen. En tilnærming for å stimulere kreativitet når man leter etter løsninger, og en for å konstruere og utvikle løsninger. Vi vil i denne fasen primært anbefale å bruke de seks tenkehatter med de modifikasjonene vi har gjort istedenfor å bruke SIT.
+Denne fasen innebærer å komme med mulige løsninger til problemet for å eliminere rotårsaken. Boken til Fagerhaug og Andersen \cite{RCA} beskriver to mulige tilnærminger til denne fasen. En tilnærming for å stimulere kreativitet når man leter etter løsninger, som benytter verktøyet seks tenkehatter. Den andre for å konstruere og utvikle løsninger, som benytter TRIZ eller SIT. Vi vil i denne fasen primært anbefale å bruke de seks tenkehatter med de modifikasjonene vi har gjort istedenfor å bruke SIT.
 
 Verktøyene vi anbefaler til denne fasen er:
-\subsubsection{De seks tenkehatter} Seks tenkehatter fungerer godt for å idéemyldre løsninger når all dataen er klar. Seks tenkehatter er også den måten vi tror passer best for rotårsakselimineringen.
-    \begin{description}
-        \item[Steg 1:] I seks tenkehatter er det 6 forskjellige fargede hatter som skal brukes i prosessen:
-            \begin{description}
-                \item[Hvit hatt] skal være kald, nøytral og objektiv, personen skal fokusere på fakta.
-                \item[Rød hatt] skal representere sinne, og skal bare fokusere på magefølelsen og egne følelser.
-                \item[Svart hatt] skal være pessimistisk og negativ, og fokusere på hvorfor idéen er dårlig.
-                \item[Gul hatt] er optimistisk og positiv, og skal fokusere på hvorfor idéen er bra og vil fungere.
-                \item[Grønn hatt] representerer gresset, fruktbarhet og vekst, og skal fokusere på å vøre kreativ og komme på nye idéer.
-                \item[Blå hatt] er koblet til himmelen, og skal fokusere på å se tingene fra et høyere perspektiv.
-            \end{description}
-        \item[Steg 2:] Diskusjonen om problemet foregår hvor hver deltager tar utgangspunkt i hatten deres.
-        \item[Steg 3:] Når alle idéene er ferdige går man videre med å bearbeide de mest lovende idéene, og videreutvikle disse.
-    \end{description}
+\subsubsection{De seks tenkehatter} 
+Seks tenkehatter fungerer godt for å idéemyldre løsninger når all dataen er klar og kreative løsninger trengs. Seks tenkehatter er også den måten vi tror passer best i infromasjonssikkerhetssammenheng.
+\begin{description}
+    \item[Hvit hatt] skal være kald, nøytral og objektiv, personen skal fokusere på fakta.
+    \item[Rød hatt] skal representere sinne, og skal bare fokusere på magefølelsen og egne følelser.
+    \item[Svart hatt] skal være pessimistisk og negativ, og fokusere på hvorfor idéen er dårlig.
+    \item[Gul hatt] er optimistisk og positiv, og skal fokusere på hvorfor idéen er bra og vil fungere.
+    \item[Grønn hatt] representerer gresset, fruktbarhet og vekst, og skal fokusere på å vøre kreativ og komme på nye idéer.
+    \item[Blå hatt] er koblet til himmelen, og skal fokusere på å se tingene fra et høyere perspektiv.
+\end{description}
+
+\begin{description}
+    \item[Steg 1:] Tildel hatter til diskusjonsgruppen. 
+    \item[Steg 2:] Start diskusjonen ved at hvit hatt presenterer fakta om problemet som skal løses
+    \item[Steg 3:] Grønn hatt presenterer idéer på hvordan problemet kan løses
+    \item[Steg 4:] Diskuter de mulige løsningene, der gul hatt fokuserer på fordeler og svart på ulemper (alle kan delta i tillegg)
+    \item[Steg 5:] Rød hatt skal lokke frem gruppens magefølelse på løsningene
+    \item[Steg 6:] Blå hatt oppsummerer diskusjonen og stopper møtet
+\end{description}
     
-\subsubsection{SIT} Vi prøvde SIT i hver av casene våres for å se hvordan det fungerte. Vi kom fram til at SIT er et tungvint verktøy å starte, der bruk av SIT-prinsippene ikke godt lar seg overføre til informasjonssikkerhet. Resten av stegene går bra og gir gode resultater i form av forslag på en tiltaksplan.  
+\subsubsection{SIT} 
+Vi prøvde SIT i hver av casene våres for å se hvordan det fungerte. Vi kom fram til at SIT er et tungvint verktøy å starte, der mange av SIT-prinsippene ikke godt lar seg overføre til informasjonssikkerhet. Resten av stegene går bra og gir gode resultater i form av forslag på en tiltaksplan.  
     \begin{description}
         \item[Steg 1:] Ideelt sett bør man bruk et team som består av personer som innehaver all mulig informasjon om problemet. Er mulig uten, men blir langt vanskeligere å gjøre.
         \item[Steg 2:] List alle komponenten og sørg for å ta med de som virker irrelevant. 
-        \item[Steg 3:] Bruke de fem SIT-prinsippene:
-                    \begin{description}
+        \item[Steg 3:] Bruk de fem SIT-prinsippene til å finne på løsninger:
+                \begin{description}
                     \item[Attributtavhengighet] vurderer å endre en nøkkelvariabel i et produkt for å skape forbedring.
                     \item[Komponentkontroll] ser på hvordan et produkt er knyttet til omgivelsene.
                     \item[Erstatning] handler om å erstatte en del av et produkt med noe annet fra produktets omgivelser.
                     \item[Forkastning] vurderer å forbedre problemet ved å fjerne en komponent. 
                     \item[Oppdeling] har som mål å splitte et produkts attributter i to, som for eksempel splittelsen av sjampo fra balsam.
-                    \end{description}
-        \item[Steg 4:] Velg de idé som er best egnet for videre utdyping
-        \item[Steg 5:] Forsett med utdype idé og kom opp med en eller flere løsninger med en tiltaksplan.
+                \end{description}
+        \item[Steg 4:] Velg de idéer som er best egnet for videre utdyping
+        \item[Steg 5:] Forsett å utdype idéene og kom opp med en eller flere løsninger for å gå videre til en tiltaksplan.
     \end{description}
 
 \subsection{Løsningsimplementering}
 I den siste fasen er målet å implementere løsningene som ble funnet i foregående fase. Implementeringen inkluderer blant annet organisering, utvikling av en implementeringsplan, skape et konsensus om de nødvendige endringene og selvfølgelig implementeringen. Implementeringen av løsningen kan sies å være en suksess når symptomene forsvinner. 
 
-Verktøyene vi anbefaler til denne fasen er:
+Verktøyet vi anbefaler til denne fasen er:
 
-\subsubsection{Trediagram} Trediagram fungerer veldig bra for å lage en plan over hva som må gjøres for at tiltaket skal bli implementert. 
+\subsubsection{Trediagram}
+Trediagram fungerer veldig bra for å lage en plan over hva som må gjøres for at tiltaket skal bli implementert. 
 \begin{description}
     \item[Steg 1:] Lag en liste over gjøremål for å implementere løsningen(e)
-    \item[Steg 2:] Disse skal grupperes og settes opp i en trestruktur, i rekkefølgen som skal til for å få løsningen implementert.
+    \item[Steg 2:] Disse skal grupperes og settes opp i en trestruktur, i rekkefølgen som skal til for å få løsningen implementert. Aktivitetene skal plasseres i 
 \end{description}
 
 I dette steget er det ikke nødvendig å bruke noe verktøy, men det kan være lurt å benytte trediagram for å få en plan over løsningimplementering.
